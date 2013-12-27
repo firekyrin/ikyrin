@@ -1,4 +1,8 @@
 #!/bin/bash
+# Name:backup.sh
+# Author:firekyrin
+# Email:819277740@qq.com
+# Date:2013.8.8
 
 SRCDIR=ikyrin
 STYLE_FILE=$SRCDIR/style.css
