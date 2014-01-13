@@ -1,3 +1,13 @@
+ikyrin (0.6.0) unstable; urgency=low
+
+  * Fix qr-code, feedlist cumulativeoffset 30
+  * Replace images in img directory
+  * fix firekyrin.com's logo, using footlight font
+  * update version to 0.6.0
+
+ -- FireKyrin <819277740@qq.com> Mon, 13 Jan 2014 11:15:27 +0800
+
+
 ikyrin (0.5.0) unstable; urgency=low
 
   * Modify Style page 404

@@ -2,7 +2,7 @@
 Theme Name: iKyrin
 Theme URI: http://www.firekyrin.com/
 Description: FireKyrin's private theme for FireKyrin.com
-Version: 0.2.11
+Version: 0.6.0
 Author: FireKyrin
 Author URI: http://www.firekyrin.com/
 Tags: white, gray, light, two-columns, fixed-width, theme-options, right-sidebar
@@ -32,7 +32,7 @@ a:focus,input,textarea{outline:0;}
 .wp-caption-text{text-align:center;padding:0 5px !important;}
 *+html .wp-caption-text{padding:3px 5px 0 !important;}
 .post .content .wp-caption p{	margin:0;}
-.more-link{line-height:16px;height:21px;display:inline-block;padding-left:22px;font-size:11px;background:url(//style.neoease.org/img/paled/icon.png?v=010514) no-repeat;}
+.more-link{line-height:16px;height:21px;display:inline-block;padding-left:22px;font-size:11px;background:url(img/icon.png) no-repeat;}
 .alignleft{float:left;text-align:left;margin-right:10px;}
 .alignright{float:right;text-align:right;margin-left:10px;}
 .aligncenter{display:block;margin-left:auto;margin-right:auto;}
@@ -52,22 +52,22 @@ html[xmlns] .clearfix{display:block;}
 * html .clearfix{height:1%;}
 
 input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;font-family:"Microsoft Yahei",Tahoma,Arial,SimSun,"Hiragino Sans GB",PMingLiu,Verdana,sans-serif;background-color:#FFF;}
-.msg-info,.msg-warn,.msg-error,#notice{background:#FFFBD1 url(//style.neoease.org/img/paled/icon.png?v=010514) no-repeat;background-position:10px -1191px !important;background-position:10px -1190px;line-height:165%;padding:7px 10px 7px 36px;margin-top:10px;border:1px solid #FDDC9B;}
+.msg-info,.msg-warn,.msg-error,#notice{background:#FFFBD1 url(img/icon.png) no-repeat;background-position:10px -1191px !important;background-position:10px -1190px;line-height:165%;padding:7px 10px 7px 36px;margin-top:10px;border:1px solid #FDDC9B;}
 .msg-error{background-color:#FFE9EE;background-position:10px -1591px !important;background-position:10px -1590px;border-color:#F6CBCA;}
 .msg-info,#notice{background-color:#EEF4FF;background-position:10px -1991px !important;background-position:10px -1990px;border-color:#CEE1F6;}
 #notice{margin-top:0;font-size:100%;}
 .indent-s{margin-left:5px;margin-right:5px;}
 .messagebox{list-style:none;background:#FFF;font-size:90%;border:solid #CCC;margin-top:10px;border-width:1px 0;padding:10px;}
-.loading-s{display:block;padding-left:22px;height:16px;line-height:16px;background:url(//style.neoease.org/img/paled/loading-s.gif?v=031518) 0 50% no-repeat;}
+.loading-s{display:block;padding-left:22px;height:16px;line-height:16px;background:url(img/loading-s.gif) 0 50% no-repeat;}
 
 .cost{font-family:Arial;color:#999;}
 .cost b{color:#BD1A1D;}
-.buy-now{display:inline-block;width:106px;height:33px;margin-top:5px;text-indent:-999em;overflow:hidden;background:url(//style.neoease.org/img/paled/buy-now.png?v=031516) no-repeat;}
+.buy-now{display:inline-block;width:106px;height:33px;margin-top:5px;text-indent:-999em;overflow:hidden;background:url(img/buy-now.png) no-repeat;}
 
 .page-item-desc{float:left;width:310px;}
 .page-item-meta{float:right;width:325px;}
 .w3c{display:inline-block;padding:5px 12px;border-radius:3px;font-family:Verdana;font-size:10px;color:#FFF;background:#54B059;}
-.ajax-loader{height:16px;line-height:16px;padding-left:22px;font-size:11px;background:url(//style.neoease.org/img/paled/loading-s.gif?v=031518) no-repeat 0 50%;}
+.ajax-loader{height:16px;line-height:16px;padding-left:22px;font-size:11px;background:url(img/loading-s.gif) no-repeat 0 50%;}
 /* framework END */
 
 /* layout START */
@@ -77,19 +77,19 @@ input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;fo
 /* layout END */
 
 /* header START */
-#header{background:#F2F2F2 url(//style.neoease.org/img/paled/sprite.png?v=010514) repeat-x 50% -160px;height:90px;}
+#header{background:#F2F2F2 url(img/sprite.png) repeat-x 50% -160px;height:90px;}
 #caption{float:left;padding:25px 15px 0 5px;}
-#title a{background:url(//style.neoease.org/img/paled/sprite.png?v=010514) no-repeat 0 -462px;text-decoration:none;color:#FFF;width:250px;height:30px;text-indent:-999em;overflow:hidden;display:block;}
+#title a{background:url(img/sprite.png) no-repeat 0 -462px;text-decoration:none;color:#FFF;width:250px;height:30px;text-indent:-999em;overflow:hidden;display:block;}
 #tagline{color:#242424;border-top:1px solid #242424;text-decoration:none;font-size:10px;float:left;padding:0 3px;}
 #tagline h1{display:inline;font-size:100%;font-weight:normal;}
 #google-plus-for-blog{position:absolute;left:207px;top:25px;}
 /* header END */
 
 /* searchbox START */
-#searchbox{display:block;margin:0 33%;background:url(//style.neoease.org/img/paled/sprite.png?v=010514) no-repeat 100% -64px;}
-#searchbox .content{position:relative;height:32px;overflow:hidden;padding:30px 20px 14px;background:url(//style.neoease.org/img/paled/sprite.png?v=010514) no-repeat 0 16px;}
+#searchbox{display:block;margin:0 33%;background:url(img/sprite.png) no-repeat 100% -64px;}
+#searchbox .content{position:relative;height:32px;overflow:hidden;padding:30px 20px 14px;background:url(img/sprite.png) no-repeat 0 16px;}
 #searchbox .textfield{position:absolute;left:20px;top:30px;width:275px;padding:7px;border:0;font-size:13px;background:none;}
-#searchbox .button{float:right;width:24px;height:24px;margin:5px 4px 0 0;border:0;cursor:pointer;background:url(//style.neoease.org/img/paled/sprite.png?v=010514) no-repeat 0 -400px;}
+#searchbox .button{float:right;width:24px;height:24px;margin:5px 4px 0 0;border:0;cursor:pointer;background:url(img/sprite.png) no-repeat 0 -400px;}
 #searchbox .searchtip{color:#999;}
 /* searchbox END */
 
@@ -100,7 +100,7 @@ input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;fo
 
 /* article categories START */
 #article-categories{float:left;margin:0 15px -3px 0;border-top:3px solid #E9E9E9;position:relative;line-height:30px;font-size:12px;}
-.article-category-button{display:block;width:115px;height:27px;overflow:hidden;padding:0 15px;position:relative;z-index:6;color:#382E1F;background:#E1E1E1 url(//style.neoease.org/img/paled/icon.png?v=010514) no-repeat 122px -3344px;}
+.article-category-button{display:block;width:115px;height:27px;overflow:hidden;padding:0 15px;position:relative;z-index:6;color:#382E1F;background:#E1E1E1 url(img/icon.png) no-repeat 122px -3344px;}
 .article-category-button,.article-category-button:hover{text-decoration:none;}
 .article-category-button-active{height:30px;background:#F1F1F1;background-image:none;}
 .article-category-list-active{border:1px solid #E3E3E3;border-width:0 1px;margin-left:-1px;box-shadow:0 0 9px rgba(102,102,102,0.5);}
@@ -121,7 +121,7 @@ input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;fo
 
 .article-category-combobox .baffle{display:none;position:absolute;left:110px;top:1px;width:1px;height:30px;z-index:4;background:#FFF;}
 .article-category-combobox :hover .baffle{display:block;}
-.article-category-combobox .item-arraw{background-image:url(//style.neoease.org/img/paled/icon.png?v=010514);background-repeat:no-repeat;background-position:122px -3493px;}
+.article-category-combobox .item-arraw{background-image:url(img/icon.png);background-repeat:no-repeat;background-position:122px -3493px;}
 
 #article-category-combobox-syn{display:none;}
 /* article categories END */
@@ -140,10 +140,10 @@ input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;fo
 *+html .combobox{float:none !important;}
 .combobox ul{display:none;width:135px;padding:5px;position:absolute;background:#DDD;}
 .combobox li{list-style:none;}
-.combobox li a{display:block;text-decoration:none;width:103px;height:16px;padding:5px 5px 5px 27px;line-height:16px;overflow:hidden;color:#382E1F;background:url(//style.neoease.org/img/paled/icon.png?v=010514) no-repeat;}
+.combobox li a{display:block;text-decoration:none;width:103px;height:16px;padding:5px 5px 5px 27px;line-height:16px;overflow:hidden;color:#382E1F;background:url(img/icon.png) no-repeat;}
 .combobox li a:hover{background-color:#CCC;}
 
-#github,#zhihu,#weibo,#feedrss,#qr-code a{display:block;float:right;text-decoration:none;color:#382E1F;height:30px;line-height:31px;padding:0 10px 0 32px;background:url(//style.neoease.org/img/paled/icon.png?v=010514) no-repeat;}
+#github,#zhihu,#weibo,#feedrss,#qr-code a{display:block;float:right;text-decoration:none;color:#382E1F;height:30px;line-height:31px;padding:0 10px 0 32px;background:url(img/icon.png) no-repeat;}
 #github:hover,#zhihu:hover,#weibo:hover,#feedrss:hover,#qr-code a:hover,#subscribe .current,#follow .current,#qr-code .current{text-decoration:none;background-color:#DDD;}
 #follow a:hover,#subscribe a:hover,#qr-code a:hover{text-decoration:none;}
 
@@ -168,7 +168,7 @@ input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;fo
 /* social START */
 
 /* crumb START */
-#crumb{line-height:16px;border-bottom:1px solid #CCC;padding:0 5px 10px 31px;background:url(//style.neoease.org/img/paled/icon.png?v=010514) no-repeat 5px 0;}
+#crumb{line-height:16px;border-bottom:1px solid #CCC;padding:0 5px 10px 31px;background:url(img/icon.png) no-repeat 5px 0;}
 #crumb h1,#crumb h2{display:inline;font-size:11px;}
 #crumb h1 a,#crumb h2 a{font-weight:normal;}
 #announce{margin:20px 0 10px;font-size:100%;}
@@ -176,7 +176,7 @@ input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;fo
 
 /* rating START */
 .post-ratings{width:270px;line-height:13px;color:#666;}
-.rating-star{display:block;float:left;width:65px;height:13px;text-indent:-999em;overflow:hidden;background:url(//style.neoease.org/img/paled/sprite.png?v=010514) no-repeat;}
+.rating-star{display:block;float:left;width:65px;height:13px;text-indent:-999em;overflow:hidden;background:url(img/sprite.png) no-repeat;}
 .star-0-0{background-position: -65px -494px;}
 .star-0-5{background-position: -52px -507px;}
 .star-1-0{background-position: -52px -494px;}
@@ -200,7 +200,7 @@ input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;fo
 .rating-toggle:before{content:"";display:block;height:1px;width:97%;background:#ECAF5F;position:absolute;left:1px;top:0;}
 .combo-open .rating-toggle{border-color:#CCC;border-bottom:0;text-decoration:none;border-radius:0;color:#000;text-shadow:none;background:#FFF;}
 .combo-open .rating-toggle:before{content:none;}
-.post-ratings-loading{display:none;height:16px;padding-left:22px;line-height:16px;background:url(//style.neoease.org/img/paled/loading-s.gif?v=031518) no-repeat;}
+.post-ratings-loading{display:none;height:16px;padding-left:22px;line-height:16px;background:url(img/loading-s.gif) no-repeat;}
 /* rating END */
 
 /* article START */
@@ -212,7 +212,7 @@ input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;fo
 .post h1 a.title,.post h2 a.title{text-decoration:none;color:#4C4C4C;}
 .post h1 a.title:hover,.post h2 a.title:hover{color:#2C63A9;}
 .post .info{display:block;padding-bottom:10px;}
-.post .date,.post .editpost,.post .comments,.post .leave-comment{padding-left:22px;height:16px;line-height:16px;display:block;background:url(//style.neoease.org/img/paled/icon.png?v=010514) no-repeat;}
+.post .date,.post .editpost,.post .comments,.post .leave-comment{padding-left:22px;height:16px;line-height:16px;display:block;background:url(img/icon.png) no-repeat;}
 .post .date{float:left;background-position:0 -48px;margin-right:15px;float:left;}
 .post .ratings{display:block;float:left;}
 .post .post-ratings{padding-top:1px;}
@@ -220,7 +220,7 @@ input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;fo
 .post .comments,.post .leave-comment{margin-left:15px;float:right;background-position:0 -96px;}
 .post .bdlikebutton,.post .gplusbutton{float:left;margin-right:15px;}
 .post .content{overflow:hidden;padding:5px 0 0;line-height:1.65;font-size:16px;}
-.post .content h3{color:#54B059;margin-bottom:10px;padding:20px 0 7px;font-size:16px;background:url(//style.neoease.org/img/paled/dotted-line-h.png?v=031516) repeat-x 0 100%;}
+.post .content h3{color:#54B059;margin-bottom:10px;padding:20px 0 7px;font-size:16px;background:url(img/dotted-line-h.png) repeat-x 0 100%;}
 .post .content h4{margin:25px 0 10px;}
 .post .content img{max-width:100%;}
 .post .content ul,.post .content ol{padding-bottom:10px;padding-left:20px;}
@@ -264,7 +264,7 @@ input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;fo
 #pagination .wp-pagenavi{margin-right:100px;text-align:center;}
 #pagination a{display:inline-block;position:relative;padding:4px 8px;margin:0 2px 0 3px;text-decoration:none;border:1px solid #DDD;background-color:#FFF;}
 #pagination a:hover{border-color:#80ADD6;text-decoration:none;background-color:#EFF5FE;}
-#pagination a.previouspostslink,#pagination a.nextpostslink{display:inline-block;width:7px;text-indent:-999em;background-image:url(//style.neoease.org/img/paled/icon.png?v=010514);background-repeat:no-repeat;}
+#pagination a.previouspostslink,#pagination a.nextpostslink{display:inline-block;width:7px;text-indent:-999em;background-image:url(img/icon.png);background-repeat:no-repeat;}
 #pagination a.previouspostslink{background-position:3px -3445px;}
 #pagination a.nextpostslink{background-position:4px -3395px;}
 #pagination span.current{display:inline-block;position:relative;padding:4px 8px;margin:0 2px 0 3px;border-color:#F1F1F1;font-weight:700;color:#666;background:transparent;}
@@ -280,12 +280,12 @@ input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;fo
 #sidebar{width:300px;margin-left:-300px;padding-bottom:50px;line-height:1.65;overflow:hidden;}
 .widget{padding:0;margin:20px 5px;}
 .widget .title{padding-bottom:5px;font-weight:700;font-size:14px;}
-.widget li{padding-left:14px;background:url(//style.neoease.org/img/paled/icon.png?v=010514) no-repeat -4px -3599px;}
+.widget li{padding-left:14px;background:url(img/icon.png) no-repeat -4px -3599px;}
 .widget .title small,.widget li small{font-size:11px;font-weight:normal;color:#999;}
 .widget .title small{margin-left:3px;}
 
 #translate-widget{margin:15px 0;}
-#translate-tool{padding-left:22px;height:16px;line-height:16px;display:block;background:url(//style.neoease.org/img/paled/icon.png?v=010514) no-repeat 0 -208px;}
+#translate-tool{padding-left:22px;height:16px;line-height:16px;display:block;background:url(img/icon.png) no-repeat 0 -208px;}
 #translate-tool .goog-te-menu-value,#translate-widget .translate{height:16px;line-height:16px;display:block;font-size:12px;}
 
 #translate-tool .translate-caption{float:left;padding:0;margin-right:10px;}
@@ -295,13 +295,13 @@ input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;fo
 #translate-tool .goog-te-menu-value span{color:#2C63A9;}
 #translate-loading{float:left;}
 
-#aid-widget div{display:block;padding-left:22px;height:16px;line-height:16px;background:url(//style.neoease.org/img/paled/icon.png?v=010514) no-repeat 0 -2000px;}
+#aid-widget div{display:block;padding-left:22px;height:16px;line-height:16px;background:url(img/icon.png) no-repeat 0 -2000px;}
 #toc-widget{margin-top:15px;}
 
 #tag-cloud a{line-height:1.5;}
 .st-tag-cloud{padding-top:3px;}
 
-.cse-loading{display:block;padding-left:22px;height:16px;line-height:16px;background:url(//style.neoease.org/img/paled/loading-s.gif?v=031518) 0 50% no-repeat;}
+.cse-loading{display:block;padding-left:22px;height:16px;line-height:16px;background:url(img/loading-s.gif) 0 50% no-repeat;}
 
 .showcase{display:block;margin:20px 0;overflow:hidden;}
 .showcase .panel{display:block;width:310px;margin:-10px 0 0 -10px;padding:0;}
@@ -309,7 +309,7 @@ input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;fo
 .showcase .panel .item{float:left;display:block;padding:10px 0 0 10px;margin:0;width:145px;height:100px;overflow:hidden;}
 .showcase img{display:block;}
 
-.showcase .panel{background:url(//style.neoease.org/img/paled/slot-145x100.png?v=121521);}
+.showcase .panel{background:url(img/slot-145x100.png);}
 
 #sidebar-follow{width:300px;}
 #sidebar-follow .widget,#sidebar-follow .showcase{margin-top:0;}
@@ -322,7 +322,7 @@ input.textfield,textarea{padding:2px 4px;border:1px solid #CCC;font-size:14px;fo
 /* footer START */
 #footer{display:block;width:100%;height:40px;padding:10px 0 18px;border-top:3px solid #DDD;line-height:1.65;font-size:11px;color:#999;background:#E9E9E9;}
 #footer a{color:#787878;}
-a#go-top{width:49px;height:35px;text-decoration:none;opacity:0.5;background:url(//style.neoease.org/img/paled/sprite.png?v=010514) no-repeat 0 -424px;}
+a#go-top{width:49px;height:35px;text-decoration:none;opacity:0.5;background:url(img/sprite.png) no-repeat 0 -424px;}
 a#go-top:hover{background-position:-49px -424px;}
 #copyright{float:left;}
 #copyright .theming{font-size:10px;}
@@ -360,14 +360,14 @@ a#go-top:hover{background-position:-49px -424px;}
 #comment-login{margin-top:15px;}
 #trackbacks{display:none;padding:0 10px 10px;}
 #trackbacks li{list-style:none;}
-.trackback{font-size:11px;margin-top:10px;padding-left:14px;line-height:1.65;color:#999;background:url(//style.neoease.org/img/paled/icon.png?v=010514) no-repeat -4px -3600px;}
+.trackback{font-size:11px;margin-top:10px;padding-left:14px;line-height:1.65;color:#999;background:url(img/icon.png) no-repeat -4px -3600px;}
 .trackback .title{display:block;font-size:12px;}
 .commentlist .messagebox{border-top:0;margin:0;}
 #trackbacks .messagebox{border:0;padding:0;}
-#trackbacks .ajax-loader{padding:52px 15px 15px;text-align:center;background:url(//style.neoease.org/img/paled/loading-m.gif?v=072013) no-repeat 50% 15px;}
+#trackbacks .ajax-loader{padding:52px 15px 15px;text-align:center;background:url(img/loading-m.gif) no-repeat 50% 15px;}
 
 #reviews .go-back{padding-top:15px;}
-#reviews .add-comment,#reviews .read-article{display:inline-block;height:16px;padding-left:22px;margin-right:15px;line-height:16px;background:url(//style.neoease.org/img/paled/icon.png?v=010514) no-repeat;}
+#reviews .add-comment,#reviews .read-article{display:inline-block;height:16px;padding-left:22px;margin-right:15px;line-height:16px;background:url(img/icon.png) no-repeat;}
 #reviews .add-comment{background-position:0 -96px;}
 #reviews .read-article{background-position:0 -80px;}
 
@@ -375,13 +375,13 @@ a#go-top:hover{background-position:-49px -424px;}
 .commentlist li#comment-tip:nth-child(even){width:550px;margin:0;border:0;z-index:3;background:transparent;}
 .commentlist li#comment-tip .innerbox{background:#FFF;border:3px solid #CCC;padding:10px;margin-left:15px;box-shadow:3px 3px 0 rgba(216,216,216,.3);}
 .commentlist li#comment-tip p.ajax-loader{padding-top:10px;padding-bottom:10px}
-.commentlist li#comment-tip .arrow{background:url(//style.neoease.org/img/paled/sprite.png?v=010514) no-repeat -24px -400px;margin:20px -3px 0 0;width:18px;height:22px;display:block;float:left;}
+.commentlist li#comment-tip .arrow{background:url(img/sprite.png) no-repeat -24px -400px;margin:20px -3px 0 0;width:18px;height:22px;display:block;float:left;}
 
 .comment-pagination{padding:5px 15px;text-align:center;background:#F1F1F1;}
 .comment-pagination .pages{float:left;}
 .comment-pagination a.page-numbers{display:inline-block;padding:4px 8px;margin:0 1px;border:1px solid #DDD;text-decoration:none;background-color:#FFF;}
 .comment-pagination a.page-numbers:hover{border-color:#80ADD6;text-decoration:none;background-color:#EFF5FE;}
-.comment-pagination a.prev,.comment-pagination a.next{display:inline-block;width:7px;text-indent:-999em;background-image:url(//style.neoease.org/img/paled/icon.png?v=010514);background-repeat:no-repeat;}
+.comment-pagination a.prev,.comment-pagination a.next{display:inline-block;width:7px;text-indent:-999em;background-image:url(img/icon.png);background-repeat:no-repeat;}
 .comment-pagination a.prev{background-position:3px -3445px;}
 .comment-pagination a.next{background-position:4px -3395px;}
 .comment-pagination span.current{display:inline-block;position:relative;padding:4px 8px;margin:0 1px;border-color:#F1F1F1;font-weight:700;color:#666;background:transparent;}
@@ -394,7 +394,7 @@ a#go-top:hover{background-position:-49px -424px;}
 #respond .textfield{width:250px;margin-right:5px;}
 #respond .ratings{display:block;float:left;}
 #respond .post-ratings{padding-top:5px;}
-#author,#email,#url{background-image:url(//style.neoease.org/img/paled/icon.png?v=010514);background-repeat:no-repeat;padding:3px 1px 3px 26px;}
+#author,#email,#url{background-image:url(img/icon.png);background-repeat:no-repeat;padding:3px 1px 3px 26px;}
 #author{background-position:4px -476px;}
 #email{background-position:4px -348px;}
 #url{background-position:4px -508px;}
@@ -413,10 +413,10 @@ textarea#comment{width:625px;resize:vertical;}
 .linkcat{padding-bottom:2px;font-size:12px;}
 .post .content .linkcat ul{padding-left:0;}
 .post .content .linkcat li{list-style:none;float:left;width:33%;white-space:nowrap;padding-bottom:8px;overflow:hidden;}
-.post .content .linkcat li a{background:url(//style.neoease.org/img/paled/icon.png?v=010514) no-repeat 0 -512px;padding-left:22px;height:16px;line-height:16px;display:block;float:left;}
+.post .content .linkcat li a{background:url(img/icon.png) no-repeat 0 -512px;padding-left:22px;height:16px;line-height:16px;display:block;float:left;}
 /* links END */
 
-.post .content img.singlead{background-image:url(//style.neoease.org/img/paled/icon.png?v=010514);background-position:0 -720px;background-repeat:no-repeat;padding-left:19px;border-width:1px;}
+.post .content img.singlead{background-image:url(img/icon.png);background-position:0 -720px;background-repeat:no-repeat;padding-left:19px;border-width:1px;}
 small,#related_posts .count{font-size:80%;}
 a:hover{text-decoration:underline;}
 .floatright,#submitbox .submitbutton,.commentsvote{float:right;}
@@ -427,7 +427,7 @@ a:hover{text-decoration:underline;}
 #assist li,#sidebar li,#posts li{list-style:none;margin-top:5px;}
 
 #commentform-mask{background:#F9F9F9;position:absolute;z-index:10;}
-#commentform-message{display:block;float:left;line-height:16px;padding:15px 15px 15px 47px;border:1px solid #E6E6E6;background:#FFF url(//style.neoease.org/img/paled/loading-m.gif?v=072013) 10px 50% no-repeat;position:absolute;z-index:11;}
+#commentform-message{display:block;float:left;line-height:16px;padding:15px 15px 15px 47px;border:1px solid #E6E6E6;background:#FFF url(img/loading-m.gif) 10px 50% no-repeat;position:absolute;z-index:11;}
 
 /* categories START */
 #categories{padding:10px 20px 0;}
@@ -457,7 +457,7 @@ a:hover{text-decoration:underline;}
 .rc-item .rc-reviewer{font-weight:700;}
 .rc-item .rc-label{text-transform:capitalize;font-weight:700;color:#666;}
 
-.rc-item .rc-collapse,.rc-item .rc-expand{background:#F9F9F9 url(//style.neoease.org/img/paled/icon.png?v=010514) no-repeat 100% -448px;height:16px;width:20px;display:block;text-indent:-999em;float:right;cursor:pointer;position:absolute;right:0;}
+.rc-item .rc-collapse,.rc-item .rc-expand{background:#F9F9F9 url(img/icon.png) no-repeat 100% -448px;height:16px;width:20px;display:block;text-indent:-999em;float:right;cursor:pointer;position:absolute;right:0;}
 .rc-item .rc-expand{background-position:100% -432px;}
 .rc-item .rc-ellipsis{font-size:10px;}
 
@@ -466,7 +466,7 @@ a:hover{text-decoration:underline;}
 .rc-navi .rc-newest{float:left;padding-right:10px;}
 .rc-navi .rc-newer{float:left;}
 .rc-navi .rc-older{float:right;}
-.rc-navi .rc-loading{background:url(//style.neoease.org/img/paled/loading-s.gif?v=031518) 0 50% no-repeat;padding-left:22px;height:16px;line-height:16px;display:block;}
+.rc-navi .rc-loading{background:url(img/loading-s.gif) 0 50% no-repeat;padding-left:22px;height:16px;line-height:16px;display:block;}
 
 .rc-clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
 .rc-clearfix{display:inline-block;}
@@ -487,11 +487,11 @@ html[xmlns] .rc-clearfix{display:block;}
 /* wp-syntax END */
 
 /* wp-easyarchives START */
-#easy-archives .ea-loading{background:url(//style.neoease.org/img/paled/loading-s.gif?v=031518) 0 50% no-repeat;padding-left:22px;height:16px;line-height:16px;display:block;font-size:11px;}
+#easy-archives .ea-loading{background:url(img/loading-s.gif) 0 50% no-repeat;padding-left:22px;height:16px;line-height:16px;display:block;font-size:11px;}
 #easy-archives .ea-closed{display:none;}
 #easy-archives .ea-collapse,#easy-archives .ea-expand{display:block;float:left;width:16px;height:16px;cursor:pointer;}
-#easy-archives .ea-collapse{background:url(//style.neoease.org/img/paled/icon.png?v=010514) 0 -656px no-repeat;}
-#easy-archives .ea-expand{background:url(//style.neoease.org/img/paled/icon.png?v=010514) 0 -560px no-repeat;}
+#easy-archives .ea-collapse{background:url(img/icon.png) 0 -656px no-repeat;}
+#easy-archives .ea-expand{background:url(img/icon.png) 0 -560px no-repeat;}
 #easy-archives .ea-detail{font-weight:700;}
 #easy-archives .ea-month{padding-bottom:10px;}
 #easy-archives .ea-month li{list-style:none;}

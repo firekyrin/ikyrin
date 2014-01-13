@@ -171,6 +171,7 @@
 
 	<!-- sidebar west START -->
 	<div id="westsidebar">
+	<?php if ( false ) : ?>
 	<?php if ( !function_exists('dynamic_sidebar') ||!dynamic_sidebar('west_sidebar') ) : ?>
 
 		<!-- archives -->
@@ -183,12 +184,14 @@
 			</ul>
 		<?php endif; ?>
 	<?php endif; ?>
+	<?php endif; ?>
 	</div>
 
 	<!-- sidebar west END -->
 </div>
 
 <!-- sidebar south START -->
+<?php if ( false ) : ?>
 <?php if ( !function_exists('dynamic_sidebar') ||!dynamic_sidebar('south_sidebar') ) : ?>
 
 	<!-- meta -->
@@ -200,6 +203,7 @@
 		</ul>
 	</div>
 
+<?php endif; ?>
 <?php endif; ?>
 <!-- sidebar south END -->
 

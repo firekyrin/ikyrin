@@ -40,9 +40,15 @@
 			}
 			else {
 				//wp_nav_menu(array('depth' => 3, 'container_class' => 'inner clearfix', 'menu_id' => 'menus', 'theme_location'=>'menu-header'));
+				wp_list_categories('title_li=0&orderby=name&include=5,10,6,9,12&show_count=0');
+				$pages = wp_list_pages('echo=0&exclude=2,13,15,17,19,21,23,25&title_li=0&sort_column=menu_order');
+				echo preg_replace('/title=\"(.*?)\"/','',$pages);
+				/* test: */
+				/*
 				wp_list_categories('title_li=0&orderby=name&include=4,5&show_count=0');
 				$pages = wp_list_pages('echo=0&exclude=2&title_li=0&sort_column=menu_order');
 				echo preg_replace('/title=\"(.*?)\"/','',$pages);
+				*/
 		} ?>
 	</ul>
 	<!-- menus END -->

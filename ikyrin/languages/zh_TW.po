@@ -302,8 +302,8 @@ msgstr "版權所有 &copy; "
 
 #: footer.php:39
 #, php-format
-msgid "Theme by <a href=\"%1$s\">NeoEase</a>. Valid <a href=\"%2$s\">XHTML 1.1</a> and <a href=\"%3$s\">CSS 3</a>."
-msgstr "主題由 <a href=\"%1$s\">NeoEase</a> 提供，通過 <a href=\"%2$s\">XHTML 1.1</a> 和 <a href=\"%3$s\">CSS 3</a> 認證。"
+msgid "Theme by <a href=\"%1$s\">FireKyrin</a>. Valid <a href=\"%2$s\">XHTML 1.1</a> and <a href=\"%3$s\">CSS 3</a>."
+msgstr "主題由 <a href=\"%1$s\">FireKyrin</a> 提供，通過 <a href=\"%2$s\">XHTML 1.1</a> 和 <a href=\"%3$s\">CSS 3</a> 認證。"
 
 #: functions.php:180
 #: functions.php:189

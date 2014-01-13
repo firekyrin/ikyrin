@@ -22,15 +22,15 @@ US English/en_US (default)
 
 == Suggested Plugins ==
 
-WP-PageNavi: http://lesterchan.net/portfolio/programming/php/#wp-pagenavi
-WP23 Related Posts: http://fairyfish.net/2007/09/12/wordpress-23-related-posts-plugin/
-WP-RecentComments: http://www.neoease.com/plugins/
-Highslide4WP: http://www.neoease.com/plugins/
-WP-Syntax: http://wordpress.org/extend/plugins/wp-syntax/
-Quick Comments: http://wppluginsj.sourceforge.jp/quick-comments/ (version 0.7.0 or heighter)
-WP-EasyArchives: http://www.neoease.com/plugins/
-AJAX Comment Pager: http://www.neoease.com/plugins/ (Comment list ID: thecomments | Callback method name: custom_comments)
-Mail To Commenter: http://www.thinkagain.cn/archives/989.html (via '@+user+blank')
+WP-PageNavi
+WP23 Related Posts
+WP-RecentComments
+Highslide4WP
+WP-Syntax
+Quick Comments
+WP-EasyArchives
+AJAX Comment Pager
+Mail To Commenter
 
 == Demo ==
 
@@ -41,3 +41,6 @@ fix sprite.png FireKyrin's y.
 
 iBox tool:
 http://tool.lu/
+
+YUI Compressor
+http://ganquan.info/yui/?hl=zh-CN
