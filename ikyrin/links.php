@@ -11,11 +11,11 @@
 			<?php if( method_exists( $GoogleTranslation,'google_ajax_translate_button') ) :  ?>
 				<span id="translate_button_post-<?php the_ID(); ?>" class="translate"><a href="javascript:void(0);" onclick="show_translate_popup(\'en\', \'post\', <?php the_ID(); ?>);" rel="nofollow">Translate</a></span>
 			<?php endif; ?>
-			<?php edit_post_link(__('Edit','inove'),'<span class="editpost">','</span>'); ?>
+			<?php edit_post_link(__('Edit','ikyrin'),'<span class="editpost">','</span>'); ?>
 			<?php if ( $user_ID ) :  ?>
 				<div class="act">
-					<span class="addlink"><a href="<?php echo get_settings('siteurl'); ?>/wp-admin/link-add.php"><?php _e('Add link','inove'); ?></a></span>
-					<span class="editlinks"><a href="<?php echo get_settings('siteurl'); ?>/wp-admin/link-manager.php"><?php _e('Edit links','inove'); ?></a></span>
+					<span class="addlink"><a href="<?php echo get_settings('siteurl'); ?>/wp-admin/link-add.php"><?php _e('Add link','ikyrin'); ?></a></span>
+					<span class="editlinks"><a href="<?php echo get_settings('siteurl'); ?>/wp-admin/link-manager.php"><?php _e('Edit links','ikyrin'); ?></a></span>
 				</div>
 			<?php endif; ?>
 		</div>
@@ -46,7 +46,7 @@
 
 <?php else :  ?>
 	<div class="errorbox">
-		<?php _e('Sorry, no posts matched your criteria.','inove'); ?>
+		<?php _e('Sorry, no posts matched your criteria.','ikyrin'); ?>
 	</div>
 <?php endif; ?>
 <?php get_footer(); ?>

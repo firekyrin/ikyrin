@@ -8,7 +8,7 @@ Stable tag: 1.0.2
 
 == Description ==
 
-iKyrin theme inspired by mg12's iNove theme.
+iKyrin is firekyrin.com's proprietary custom theme, which is based on mg12 developed with the inove. iKyrin is free and open source, anyone can modify based on this theme. iKyrin customized strong need for users according to their adaptation.
 
 Tested on WordPress 3.5.0, 3.5.5, with IE 6/7/8/9, Firefox 2/3/3.5/3.6, Opera 9.6/10/11, Safari 4 and Chrome 2.0 up to 9.0.
 Valid XHTML 1.1 and CSS 3!

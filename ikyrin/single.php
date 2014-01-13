@@ -1,25 +1,25 @@
 <?php get_header(); ?>
-<?php $options = get_option('inove_options'); ?>
+<?php $options = get_option('ikyrin_options'); ?>
 <?php if (have_posts()) : the_post();update_post_caches($posts); ?>
 	<div id="crumb">
 		<?php $cur_cat = get_the_category(); ?>
-		<a rel="nofollow" href="<?php echo get_settings('home'); ?>/"><?php _e('Home','inove'); ?></a>
+		<a rel="nofollow" href="<?php echo get_settings('home'); ?>/"><?php _e('Home','ikyrin'); ?></a>
 		  &gt; <?php the_category(', '); ?>
 	</div>
 
 	<div class="post post_without_border" id="post-<?php the_ID(); ?>">
 		<h1><?php the_title(); ?></h1>
 		<div id="post-info" class="info clearfix">
-			<span class="date"><?php the_time(__('F jS, Y','inove')) ?></span>
+			<span class="date"><?php the_time(__('F jS, Y','ikyrin')) ?></span>
 			<?php if( method_exists( $GoogleTranslation,'google_ajax_translate_button') ) : ?>
 				<span id="translate_button_post-<?php the_ID(); ?>" class="translate"><a href="javascript:void(0);" onclick="show_translate_popup(\'en\', \'post\', <?php the_ID(); ?>);" rel="nofollow">Translate</a></span>
 			<?php endif; ?>
 			<?php if ($options['author']) : ?><span class="author"><?php the_author_posts_link(); ?></span><?php endif; ?>
 			<span><?php if(function_exists('the_ratings')) { the_ratings(); } ?></span>
-			<?php edit_post_link(__('Edit','inove'),'<span class="editpost">','</span>'); ?>
+			<?php edit_post_link(__('Edit','ikyrin'),'<span class="editpost">','</span>'); ?>
 			<?php if ($comments ||comments_open()) : ?>
-				<span class="addcomment"><a rel="nofollow" href="#respond"><?php _e('Leave a comment','inove'); ?></a></span>
-				<span class="comments"><a rel="nofollow" href="#comments"><?php _e('Go to comments','inove'); ?></a></span>
+				<span class="addcomment"><a rel="nofollow" href="#respond"><?php _e('Leave a comment','ikyrin'); ?></a></span>
+				<span class="comments"><a rel="nofollow" href="#comments"><?php _e('Go to comments','ikyrin'); ?></a></span>
 			<?php endif; ?>
 		</div>
 		<div class="content clearfix">
@@ -69,7 +69,7 @@
 	<?php include('templates/comments.php'); ?>
 <?php else : ?>
 	<div class="errorbox">
-		<?php _e('Sorry, no posts matched your criteria.','inove'); ?>
+		<?php _e('Sorry, no posts matched your criteria.','ikyrin'); ?>
 	</div>
 <?php endif; ?>
 <?php get_footer(); ?>

@@ -1,5 +1,5 @@
 <!-- header START -->
-<?php $options = get_option('inove_options'); ?>
+<?php $options = get_option('ikyrin_options'); ?>
 <div id="header">
 	<div class="inner clearfix">
 	<div id="caption">
@@ -29,7 +29,7 @@
 	<div class="inner clearfix">
 	<!-- menus START -->
 	<ul id="menus">
-		<li class="<?php echo($home_menu); ?>"><a class="home" href="<?php echo get_settings('home'); ?>/"><?php _e('Home','inove'); ?></a></li>
+		<li class="<?php echo($home_menu); ?>"><a class="home" href="<?php echo get_settings('home'); ?>/"><?php _e('Home','ikyrin'); ?></a></li>
 		<?php 
 			if($options['menu_type'] == 'categories') {
 				wp_list_categories('title_li=0&orderby=name&show_count=0');

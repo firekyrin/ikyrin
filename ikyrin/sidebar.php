@@ -1,5 +1,5 @@
 <?php 
-	$options = get_option('inove_options');
+	$options = get_option('ikyrin_options');
 	if($options['feed'] &&$options['feed_url']) {
 		if (substr(strtoupper($options['feed_url']),0,7) == 'HTTP://') {
 			$feed = $options['feed_url'];
@@ -52,7 +52,7 @@
 ) ) : ?>
 		<div class="widget widget_ads clearfix">
 			<?php if($options['showcase_caption']) : ?>
-				<div class="title"><?php if($options['showcase_title']){echo($options['showcase_title']);}else{_e('Showcase','inove');} ?></div>
+				<div class="title"><?php if($options['showcase_title']){echo($options['showcase_title']);}else{_e('Showcase','ikyrin');} ?></div>
 			<?php endif; ?>
 			<ul>
 
@@ -83,7 +83,7 @@
 	<!-- Posts View  -->
 	<?php if (is_home() &&function_exists('get_most_viewed')): ?>
 		<div class="widget">
-			<div class="title"><?php _e('Hot Posts', 'inove'); ?></div>
+			<div class="title"><?php _e('Hot Posts', 'ikyrin'); ?></div>
 		   <ul>
 			  <?php get_most_viewed('post',5); ?>
 		   </ul>
@@ -91,7 +91,7 @@
 
 	<?php elseif (is_tag() &&function_exists('get_most_viewed_tag') &&!empty($tag_id)): ?>
 		<div class="widget">
-			<div class="title"><?php _e('Hot Posts', 'inove'); ?></div>
+			<div class="title"><?php _e('Hot Posts', 'ikyrin'); ?></div>
 			<ul>
 			  <?php get_most_viewed_tag($tag_id,'post',5); ?>
 			</ul>
@@ -99,7 +99,7 @@
 
 	<?php elseif (is_category() &&function_exists('get_most_viewed_category') &&!empty($cat)): ?>
 		<div class="widget">
-			<div class="title"><?php _e('Hot Posts', 'inove'); ?></div>
+			<div class="title"><?php _e('Hot Posts', 'ikyrin'); ?></div>
 			<ul>
 			<?php get_most_viewed_category($cat,'post',5); ?>
 			</ul>
@@ -107,7 +107,7 @@
 
 	<?php elseif (function_exists('get_most_viewed')) : ?>
 		<div class="widget">
-			<div class="title"><?php _e('Hot Posts', 'inove'); ?></div>
+			<div class="title"><?php _e('Hot Posts', 'ikyrin'); ?></div>
 		   <ul>
 			  <?php get_most_viewed('post',5); ?>
 		   </ul>
@@ -117,7 +117,7 @@
 	<!-- recent comments -->
 	<?php if( function_exists('wp_recentcomments') ) : ?>
 		<div class="widget">
-			<div class="title"><?php _e('Recent Comments', 'inove'); ?></div>
+			<div class="title"><?php _e('Recent Comments', 'ikyrin'); ?></div>
 			<ul>
 				<?php wp_recentcomments('limit=5&length=16&post=false&smilies=true'); ?>
 			</ul>
@@ -126,7 +126,7 @@
 
 	<!-- tag cloud -->
 	<div id="tag-cloud" class="widget">
-		<div class="title"><?php _e('Tag Cloud', 'inove'); ?></div>
+		<div class="title"><?php _e('Tag Cloud', 'ikyrin'); ?></div>
 		<?php wp_tag_cloud('smallest=8&largest=16'); ?>
 	</div>
 
@@ -159,7 +159,7 @@
 
 		<!-- categories -->
 		<div class="widget_categories">
-			<div class="title"><?php _e('Categories', 'inove'); ?></div>
+			<div class="title"><?php _e('Categories', 'ikyrin'); ?></div>
 			<ul>
 				<?php wp_list_cats('sort_column=name&optioncount=0&depth=1'); ?>
 			</ul>
@@ -174,7 +174,7 @@
 	<?php if ( !function_exists('dynamic_sidebar') ||!dynamic_sidebar('west_sidebar') ) : ?>
 
 		<!-- archives -->
-		<div class="title"><?php _e('Archives', 'inove'); ?></div>
+		<div class="title"><?php _e('Archives', 'ikyrin'); ?></div>
 		<?php if(function_exists('wp_easyarchives_widget')) : ?>
 			<?php wp_easyarchives_widget("mode=none&limit=6"); ?>
 		<?php else : ?>
@@ -193,7 +193,7 @@
 
 	<!-- meta -->
 	<div class="widget">
-		<div class="title"><?php _e('Meta', 'inove'); ?></div>
+		<div class="title"><?php _e('Meta', 'ikyrin'); ?></div>
 		<ul>
 			<?php wp_register(); ?>
 			<li><?php wp_loginout(); ?></li>

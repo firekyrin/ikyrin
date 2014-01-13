@@ -1,7 +1,7 @@
 <?php 
-	class iNoveOptions {
+	class iKyrinOptions {
 		function getOptions() {
-			$options = get_option('inove_options');
+			$options = get_option('ikyrin_options');
 			if (!is_array($options)) {
 			$options['keywords'] = '';
 			$options['description'] = '';
@@ -46,14 +46,14 @@
 			$options['analytics'] = false;
 			$options['analytics_content'] = '';
 			$options['wumii_is_enabled'] = true;
-			update_option('inove_options',$options);
+			update_option('ikyrin_options',$options);
 		}
 		return $options;
 	}
 
 	function add() {
-		if(isset($_POST['inove_save'])) {
-			$options = iNoveOptions::getOptions();
+		if(isset($_POST['ikyrin_save'])) {
+			$options = iKyrinOptions::getOptions();
 			$options['keywords'] = stripslashes($_POST['keywords']);
 			$options['description'] = stripslashes($_POST['description']);
 			if ($_POST['google_cse']) {
@@ -177,31 +177,31 @@
 					$options['analytics'] = (bool)false;
 				}
 				$options['analytics_content'] = stripslashes($_POST['analytics_content']);
-				update_option('inove_options',$options);
+				update_option('ikyrin_options',$options);
 			}else {
-				iNoveOptions::getOptions();
+				iKyrinOptions::getOptions();
 		}
-		add_theme_page(__('Current Theme Options','inove'),__('Current Theme Options','inove'),'edit_themes',basename(__FILE__),array('iNoveOptions','display'));
+		add_theme_page(__('Current Theme Options','ikyrin'),__('Current Theme Options','ikyrin'),'edit_themes',basename(__FILE__),array('iKyrinOptions','display'));
 	}
 	function display() {
-		$options = iNoveOptions::getOptions();
+		$options = iKyrinOptions::getOptions();
 ?>
-<form action="#" method="post" enctype="multipart/form-data" name="inove_form" id="inove_form">
+<form action="#" method="post" enctype="multipart/form-data" name="ikyrin_form" id="ikyrin_form">
 	<div class="wrap">
-		<h2><?php _e('Current Theme Options','inove'); ?></h2>
+		<h2><?php _e('Current Theme Options','ikyrin'); ?></h2>
 
 		<table class="form-table">
 			<tbody>
 				<tr valign="top">
 					<th scope="row">
-						<?php _e('Meta','inove'); ?>						<br/>
-						<small style="font-weight:normal;"><?php _e('Just in effect homepage','inove'); ?></small>
+						<?php _e('Meta','ikyrin'); ?>						<br/>
+						<small style="font-weight:normal;"><?php _e('Just in effect homepage','ikyrin'); ?></small>
 					</th>
 					<td>
-						<?php _e('Keywords','inove'); ?>						<label><?php _e('( Separate keywords with commas )','inove'); ?></label><br/>
+						<?php _e('Keywords','ikyrin'); ?>						<label><?php _e('( Separate keywords with commas )','ikyrin'); ?></label><br/>
 						<input type="text" name="keywords" id="keyword" class="code" size="136" value="<?php echo($options['keywords']); ?>">
 						<br/>
-						<?php _e('Description','inove'); ?>						<label><?php _e('( Main decription for your blog )','inove'); ?></label>
+						<?php _e('Description','ikyrin'); ?>						<label><?php _e('( Main decription for your blog )','ikyrin'); ?></label>
 						<br/>
 						<input type="text" name="description" id="description" class="code" size="136" value="<?php echo($options['description']); ?>">
 					</td>
@@ -212,15 +212,15 @@
 		<table class="form-table">
 			<tbody>
 				<tr valign="top">
-					<th scope="row"><?php _e('Search','inove'); ?></th>
+					<th scope="row"><?php _e('Search','ikyrin'); ?></th>
 					<td>
 						<label>
 							<input name="google_cse" type="checkbox" value="checkbox" <?php if($options['google_cse']) echo "checked='checked'"; ?> />
-							 <?php _e('Using google custom search engine.','inove'); ?>						</label>
+							 <?php _e('Using google custom search engine.','ikyrin'); ?>						</label>
 						<br/>
-						<?php _e('CX:','inove'); ?>						 <input type="text" name="google_cse_cx" id="google_cse_cx" class="code" size="40" value="<?php echo($options['google_cse_cx']); ?>">
+						<?php _e('CX:','ikyrin'); ?>						 <input type="text" name="google_cse_cx" id="google_cse_cx" class="code" size="40" value="<?php echo($options['google_cse_cx']); ?>">
 						<br/>
-						<?php printf(__('Find <code>name="cx"</code> in the <strong>Search box code</strong> of <a href="%1$s">Google Custom Search Engine</a>, and type the <code>value</code> here.<br/>For example: <code>014782006753236413342:1ltfrybsbz4</code>','inove'),'http://www.google.com/coop/cse/'); ?>					</td>
+						<?php printf(__('Find <code>name="cx"</code> in the <strong>Search box code</strong> of <a href="%1$s">Google Custom Search Engine</a>, and type the <code>value</code> here.<br/>For example: <code>014782006753236413342:1ltfrybsbz4</code>','ikyrin'),'http://www.google.com/coop/cse/'); ?>					</td>
 				</tr>
 			</tbody>
 		</table>
@@ -228,17 +228,17 @@
 		<table class="form-table">
 			<tbody>
 				<tr valign="top">
-					<th scope="row"><?php _e('Menubar','inove'); ?></th>
+					<th scope="row"><?php _e('Menubar','ikyrin'); ?></th>
 					<td>
 						<label style="margin-right:20px;">
 							<input name="menu_type" type="radio" value="categories" <?php if($options['menu_type'] == 'categories') echo "checked='checked'"; ?> />
-							 <?php _e('Show categories as menu.','inove'); ?>						</label>
+							 <?php _e('Show categories as menu.','ikyrin'); ?>						</label>
 						<label style="margin-right:20px;">
 							<input name="menu_type" type="radio" value="pages" <?php if($options['menu_type'] == 'pages') echo "checked='checked'"; ?> />
-							 <?php _e('Show pages as menu.','inove'); ?>						</label>
+							 <?php _e('Show pages as menu.','ikyrin'); ?>						</label>
 						<label>
 							<input name="menu_type" type="radio" value="custom" <?php if($options['menu_type'] != 'pages' && $options['menu_type'] != 'categories') echo "checked='checked'"; ?> />
-							 <?php _e('Show ikyrin theme custom as menu.','inove'); ?>						</label>
+							 <?php _e('Show ikyrin theme custom as menu.','ikyrin'); ?>						</label>
 					</td>
 				</tr>
 			</tbody>
@@ -247,11 +247,11 @@
 		<table class="form-table">
 			<tbody>
 				<tr valign="top">
-					<th scope="row"><?php _e('Sidebar','inove'); ?></th>
+					<th scope="row"><?php _e('Sidebar','ikyrin'); ?></th>
 					<td>
 						<label>
 							<input name="nosidebar" type="checkbox" value="checkbox" <?php if($options['nosidebar']) echo "checked='checked'"; ?> />
-							 <?php _e('Hide sidebar from all pages.','inove'); ?>						</label>
+							 <?php _e('Hide sidebar from all pages.','ikyrin'); ?>						</label>
 					</td>
 				</tr>
 			</tbody>
@@ -260,11 +260,11 @@
 		<table class="form-table">
 			<tbody>
 				<tr valign="top">
-					<th scope="row"><?php _e('Theme style','inove'); ?></th>
+					<th scope="row"><?php _e('Theme style','ikyrin'); ?></th>
 					<td>
 						<label>
 							<input name="collapse" type="checkbox" value="checkbox" <?php if($options['collapse']) echo "checked='checked'"; ?> />
-							 <?php _e('Switch theme to collapse style.','inove'); ?>						</label>
+							 <?php _e('Switch theme to collapse style.','ikyrin'); ?>						</label>
 					</td>
 				</tr>
 			</tbody>
@@ -273,12 +273,12 @@
 		<table class="form-table">
 			<tbody>
 				<tr valign="top">
-					<th scope="row"><?php _e('Related Posts','inove'); ?></th>
+					<th scope="row"><?php _e('Related Posts','ikyrin'); ?></th>
 					<td>
 						<label>
 							<input name="wumii_is_enabled" type="checkbox" value="checkbox" <?php if($options['wumii_is_enabled']) echo "checked='checked'"; ?> />
-							 <?php _e('Related Posts Plugin enabled in Wumii','inove'); ?>						</label><br/>
-						<?php _e('Set in hunting related articles Style Sign:<a href=\"http://www.wumii.com/site/index.htm\">Wumii site management center</a>','inove'); ?>					</td>
+							 <?php _e('Related Posts Plugin enabled in Wumii','ikyrin'); ?>						</label><br/>
+						<?php _e('Set in hunting related articles Style Sign:<a href=\"http://www.wumii.com/site/index.htm\">Wumii site management center</a>','ikyrin'); ?>					</td>
 				</tr>
 			</tbody>
 		</table>
@@ -287,14 +287,14 @@
 			<tbody>
 				<tr valign="top">
 					<th scope="row">
-						<?php _e('Notice','inove'); ?>						<br/>
-						<small style="font-weight:normal;"><?php _e('HTML enabled','inove'); ?></small>
+						<?php _e('Notice','ikyrin'); ?>						<br/>
+						<small style="font-weight:normal;"><?php _e('HTML enabled','ikyrin'); ?></small>
 					</th>
 					<td>
 						<!-- notice START -->
 						<label>
 							<input name="notice" type="checkbox" value="checkbox" <?php if($options['notice']) echo "checked='checked'"; ?> />
-							 <?php _e('This notice bar will display at the top of posts on homepage.','inove'); ?>						</label>
+							 <?php _e('This notice bar will display at the top of posts on homepage.','ikyrin'); ?>						</label>
 						<br />
 						<label>
 							<textarea name="notice_content" id="notice_content" cols="50" rows="10" style="width:98%;font-size:12px;" class="code"><?php echo($options['notice_content']); ?></textarea>
@@ -309,21 +309,21 @@
 			<tbody>
 				<tr valign="top">
 					<th scope="row">
-						<?php _e('Title Banner','inove'); ?>						<br/>
-						<small style="font-weight:normal;"><?php _e('HTML enabled','inove'); ?></small>
+						<?php _e('Title Banner','ikyrin'); ?>						<br/>
+						<small style="font-weight:normal;"><?php _e('HTML enabled','ikyrin'); ?></small>
 					</th>
 					<td>
 						<!-- banner START -->
-						<?php _e('This banner will display at the right of header. (height: 60 pixels)','inove'); ?>						<br/>
-						<?php _e('Who can see?','inove'); ?>						<label style="margin-left:10px;">
+						<?php _e('This banner will display at the right of header. (height: 60 pixels)','ikyrin'); ?>						<br/>
+						<?php _e('Who can see?','ikyrin'); ?>						<label style="margin-left:10px;">
 							<input name="banner_registered" type="checkbox" value="checkbox" <?php if($options['banner_registered']) echo "checked='checked'"; ?> />
-							 <?php _e('Registered Users','inove'); ?>						</label>
+							 <?php _e('Registered Users','ikyrin'); ?>						</label>
 						<label style="margin-left:10px;">
 							<input name="banner_commentator" type="checkbox" value="checkbox" <?php if($options['banner_commentator']) echo "checked='checked'"; ?> />
-							 <?php _e('Commentator','inove'); ?>						</label>
+							 <?php _e('Commentator','ikyrin'); ?>						</label>
 						<label style="margin-left:10px;">
 							<input name="banner_visitor" type="checkbox" value="checkbox" <?php if($options['banner_visitor']) echo "checked='checked'"; ?> />
-							 <?php _e('Visitors','inove'); ?>						</label>
+							 <?php _e('Visitors','ikyrin'); ?>						</label>
 						<br/>
 						<label>
 							<textarea name="banner_content" id="banner_content" cols="50" rows="10" style="width:98%;font-size:12px;" class="code"><?php echo($options['banner_content']); ?></textarea>
@@ -338,21 +338,21 @@
 			<tbody>
 				<tr valign="top">
 					<th scope="row">
-						<?php _e('Post Banner','inove'); ?>						<br/>
-						<small style="font-weight:normal;"><?php _e('HTML enabled','inove'); ?></small>
+						<?php _e('Post Banner','ikyrin'); ?>						<br/>
+						<small style="font-weight:normal;"><?php _e('HTML enabled','ikyrin'); ?></small>
 					</th>
 					<td>
 						<!-- post banner START -->
-						<?php _e('This showcase will display at the bottom of post. (width: 300 pixels)','inove'); ?>						<br/>
-						<?php _e('Who can see?','inove'); ?>						<label style="margin-left:10px;">
+						<?php _e('This showcase will display at the bottom of post. (width: 300 pixels)','ikyrin'); ?>						<br/>
+						<?php _e('Who can see?','ikyrin'); ?>						<label style="margin-left:10px;">
 							<input name="post_banner_registered" type="checkbox" value="checkbox" <?php if($options['post_banner_registered']) echo "checked='checked'"; ?> />
-							 <?php _e('Registered Users','inove'); ?>						</label>
+							 <?php _e('Registered Users','ikyrin'); ?>						</label>
 						<label style="margin-left:10px;">
 							<input name="post_banner_commentator" type="checkbox" value="checkbox" <?php if($options['post_banner_commentator']) echo "checked='checked'"; ?> />
-							 <?php _e('Commentator','inove'); ?>						</label>
+							 <?php _e('Commentator','ikyrin'); ?>						</label>
 						<label style="margin-left:10px;">
 							<input name="post_banner_visitor" type="checkbox" value="checkbox" <?php if($options['post_banner_visitor']) echo "checked='checked'"; ?> />
-							 <?php _e('Visitors','inove'); ?>						</label>
+							 <?php _e('Visitors','ikyrin'); ?>						</label>
 						<br/>
 						<label>
 							<textarea name="post_banner_content" id="post_banner_content" cols="50" rows="10" style="width:98%;font-size:12px;" class="code"><?php echo($options['post_banner_content']); ?></textarea>
@@ -367,46 +367,46 @@
 			<tbody>
 				<tr valign="top">
 					<th scope="row">
-						<?php _e('Sidebar Showcase','inove'); ?>						<br/>
-						<small style="font-weight:normal;"><?php _e('HTML enabled','inove'); ?></small>
+						<?php _e('Sidebar Showcase','ikyrin'); ?>						<br/>
+						<small style="font-weight:normal;"><?php _e('HTML enabled','ikyrin'); ?></small>
 					</th>
 					<td>
 						<!-- sidebar showcase START -->
-						<?php _e('This showcase will display at the top of sidebar.','inove'); ?>						<br/>
-						<?php _e('Who can see?','inove'); ?>						<label style="margin-left:10px;">
+						<?php _e('This showcase will display at the top of sidebar.','ikyrin'); ?>						<br/>
+						<?php _e('Who can see?','ikyrin'); ?>						<label style="margin-left:10px;">
 							<input name="showcase_registered" type="checkbox" value="checkbox" <?php if($options['showcase_registered']) echo "checked='checked'"; ?> />
-							 <?php _e('Registered Users','inove'); ?>						</label>
+							 <?php _e('Registered Users','ikyrin'); ?>						</label>
 						<label style="margin-left:10px;">
 							<input name="showcase_commentator" type="checkbox" value="checkbox" <?php if($options['showcase_commentator']) echo "checked='checked'"; ?> />
-							 <?php _e('Commentator','inove'); ?>						</label>
+							 <?php _e('Commentator','ikyrin'); ?>						</label>
 						<label style="margin-left:10px;">
 							<input name="showcase_visitor" type="checkbox" value="checkbox" <?php if($options['showcase_visitor']) echo "checked='checked'"; ?> />
-							 <?php _e('Visitors','inove'); ?>						</label>
+							 <?php _e('Visitors','ikyrin'); ?>						</label>
 						<br/>
 						<label>
 							<input name="showcase_caption" type="checkbox" value="checkbox" <?php if($options['showcase_caption']) echo "checked='checked'"; ?> />
-							 <?php _e('Title:','inove'); ?>						</label>
+							 <?php _e('Title:','ikyrin'); ?>						</label>
 						 <input type="text" name="showcase_title" id="showcase_title" class="code" size="40" value="<?php echo($options['showcase_title']); ?>" />
 						<br/>
 						<label>
 							<input name="showcase_type" type="radio" value="4sq" <?php if($options['showcase_type'] != '1sq') echo "checked='checked'"; ?> />
-							 <?php _e('Show 4 squares showcase content. (square size: 125 x 125 pixels)','inove'); ?>						</label>
+							 <?php _e('Show 4 squares showcase content. (square size: 125 x 125 pixels)','ikyrin'); ?>						</label>
 						<br/>
 						<label>
-							<?php _e('Squre1:','inove'); ?> <textarea name="showcase_content1" id="showcase_content1" cols="50" rows="2" style="width:98%;font-size:12px;" class="code"><?php echo($options['showcase_content1']); ?></textarea>
+							<?php _e('Squre1:','ikyrin'); ?> <textarea name="showcase_content1" id="showcase_content1" cols="50" rows="2" style="width:98%;font-size:12px;" class="code"><?php echo($options['showcase_content1']); ?></textarea>
 						</label>
 						<label>
-							<?php _e('Squre2:','inove'); ?> <textarea name="showcase_content2" id="showcase_content2" cols="50" rows="2" style="width:98%;font-size:12px;" class="code"><?php echo($options['showcase_content2']); ?></textarea>
+							<?php _e('Squre2:','ikyrin'); ?> <textarea name="showcase_content2" id="showcase_content2" cols="50" rows="2" style="width:98%;font-size:12px;" class="code"><?php echo($options['showcase_content2']); ?></textarea>
 						</label>
 						<label>
-							<?php _e('Squre3:','inove'); ?> <textarea name="showcase_content3" id="showcase_content3" cols="50" rows="2" style="width:98%;font-size:12px;" class="code"><?php echo($options['showcase_content3']); ?></textarea>
+							<?php _e('Squre3:','ikyrin'); ?> <textarea name="showcase_content3" id="showcase_content3" cols="50" rows="2" style="width:98%;font-size:12px;" class="code"><?php echo($options['showcase_content3']); ?></textarea>
 						</label>
 						<label>
-							<?php _e('Squre4:','inove'); ?> <textarea name="showcase_content4" id="showcase_content4" cols="50" rows="2" style="width:98%;font-size:12px;" class="code"><?php echo($options['showcase_content4']); ?></textarea>
+							<?php _e('Squre4:','ikyrin'); ?> <textarea name="showcase_content4" id="showcase_content4" cols="50" rows="2" style="width:98%;font-size:12px;" class="code"><?php echo($options['showcase_content4']); ?></textarea>
 						</label>
 						<label>
 							<input name="showcase_type" type="radio" value="1sq" <?php if($options['showcase_type'] == '1sq') echo "checked='checked'"; ?> />
-							 <?php _e('Show single showcase content. (width: 250 pixels)','inove'); ?>						</label>
+							 <?php _e('Show single showcase content. (width: 250 pixels)','ikyrin'); ?>						</label>
 						<br/>
 						<label>
 							<textarea name="showcase_content5" id="showcase_content5" cols="50" rows="10" style="width:98%;font-size:12px;" class="code"><?php echo($options['showcase_content5']); ?></textarea>
@@ -420,17 +420,17 @@
 		<table class="form-table">
 			<tbody>
 				<tr valign="top">
-					<th scope="row"><?php _e('Posts','inove'); ?></th>
+					<th scope="row"><?php _e('Posts','ikyrin'); ?></th>
 					<td>
 						<label style="margin-right:20px;">
 							<input name="author" type="checkbox" value="checkbox" <?php if($options['author']) echo "checked='checked'"; ?> />
-							 <?php _e('Show author on posts.','inove'); ?>						</label>
+							 <?php _e('Show author on posts.','ikyrin'); ?>						</label>
 						<label style="margin-right:20px;">
 							<input name="categories" type="checkbox" value="checkbox" <?php if($options['categories']) echo "checked='checked'"; ?> />
-							 <?php _e('Show categories on posts.','inove'); ?>						</label>
+							 <?php _e('Show categories on posts.','ikyrin'); ?>						</label>
 						<label>
 							<input name="tags" type="checkbox" value="checkbox" <?php if($options['tags']) echo "checked='checked'"; ?> />
-							 <?php _e('Show tags on posts.','inove'); ?>						</label>
+							 <?php _e('Show tags on posts.','ikyrin'); ?>						</label>
 					</td>
 				</tr>
 			</tbody>
@@ -439,15 +439,15 @@
 		<table class="form-table">
 			<tbody>
 				<tr valign="top">
-					<th scope="row"><?php _e('Feed','inove'); ?></th>
+					<th scope="row"><?php _e('Feed','ikyrin'); ?></th>
 					<td>
-						 <?php _e('Custom feed URL:','inove'); ?> <input type="text" name="feed_url" id="feed_url" class="code" size="60" value="<?php echo($options['feed_url']); ?>">
+						 <?php _e('Custom feed URL:','ikyrin'); ?> <input type="text" name="feed_url" id="feed_url" class="code" size="60" value="<?php echo($options['feed_url']); ?>">
 						<br/>
 						<label>
 							<input name="feed_email" type="checkbox" value="checkbox" <?php if($options['feed_email']) echo "checked='checked'"; ?> />
-							 <?php _e('Show email feed in reader list.','inove'); ?>						</label>
+							 <?php _e('Show email feed in reader list.','ikyrin'); ?>						</label>
 						<br />
-						 <?php _e('Email feed URL:','inove'); ?> <input type="text" name="feed_url_email" id="feed_url_email" class="code" size="60" value="<?php echo($options['feed_url_email']); ?>">
+						 <?php _e('Email feed URL:','ikyrin'); ?> <input type="text" name="feed_url_email" id="feed_url_email" class="code" size="60" value="<?php echo($options['feed_url_email']); ?>">
 					</td>
 				</tr>
 			</tbody>
@@ -456,7 +456,7 @@
 		<table class="form-table">
 			<tbody>
 				<tr valign="top">
-					<th scope="row"><?php _e('Social','inove'); ?></th>
+					<th scope="row"><?php _e('Social','ikyrin'); ?></th>
 					<td>
 						<label>
 							<input name="social" type="checkbox" value="checkbox" <?php if($options['social']) echo "checked='checked'"; ?> />
@@ -470,13 +470,13 @@
 								<option value="douban" <?php if($options['social_name'] == 'douban') echo ' selected '; ?>><?php _e('Douban','blocks'); ?></option>
 							</select>
 						</div>
-						 <?php _e('Sina URL:','inove'); ?>						 <input type="text" name="sina_url" id="sina_url" class="code" size="40" value="<?php echo($options['sina_url']); ?>">
+						 <?php _e('Sina URL:','ikyrin'); ?>						 <input type="text" name="sina_url" id="sina_url" class="code" size="40" value="<?php echo($options['sina_url']); ?>">
 						<br />
-						 <?php _e('Twitter URL:','inove'); ?>						 <input type="text" name="twitter_url" id="twitter_url" class="code" size="40" value="<?php echo($options['twitter_url']); ?>">
+						 <?php _e('Twitter URL:','ikyrin'); ?>						 <input type="text" name="twitter_url" id="twitter_url" class="code" size="40" value="<?php echo($options['twitter_url']); ?>">
 						<br />
-						 <?php _e('Tencent URL:','inove'); ?>						 <input type="text" name="tencent_url" id="tencent_url" class="code" size="40" value="<?php echo($options['tencent_url']); ?>">
+						 <?php _e('Tencent URL:','ikyrin'); ?>						 <input type="text" name="tencent_url" id="tencent_url" class="code" size="40" value="<?php echo($options['tencent_url']); ?>">
 						<br />
-						 <?php _e('Douban URL:','inove'); ?>						 <input type="text" name="douban_url" id="douban_url" class="code" size="40" value="<?php echo($options['douban_url']); ?>">
+						 <?php _e('Douban URL:','ikyrin'); ?>						 <input type="text" name="douban_url" id="douban_url" class="code" size="40" value="<?php echo($options['douban_url']); ?>">
 						<br />
 						<a href="http://www.firekyrin.com/" onclick="window.open(this.href);return false;">Follow FireKyrin</a>
 						 | <a href="http://twitter.com/jevonszhou/" onclick="window.open(this.href);return false;">Follow Jevons Zhou</a>
@@ -489,13 +489,13 @@
 			<tbody>
 				<tr valign="top">
 					<th scope="row">
-						<?php _e('Web Analytics','inove'); ?>						<br/>
-						<small style="font-weight:normal;"><?php _e('HTML enabled','inove'); ?></small>
+						<?php _e('Web Analytics','ikyrin'); ?>						<br/>
+						<small style="font-weight:normal;"><?php _e('HTML enabled','ikyrin'); ?></small>
 					</th>
 					<td>
 						<label>
 							<input name="analytics" type="checkbox" value="checkbox" <?php if($options['analytics']) echo "checked='checked'"; ?> />
-							 <?php _e('Add web analytics code to your site. (e.g. Google Analytics, Yahoo! Web Analytics, ...)','inove'); ?>						</label>
+							 <?php _e('Add web analytics code to your site. (e.g. Google Analytics, Yahoo! Web Analytics, ...)','ikyrin'); ?>						</label>
 						<label>
 							<textarea name="analytics_content" cols="50" rows="10" id="analytics_content" class="code" style="width:98%;font-size:12px;"><?php echo($options['analytics_content']); ?></textarea>
 						</label>
@@ -505,7 +505,7 @@
 		</table>
 
 		<p class="submit">
-			<input class="button-primary" type="submit" name="inove_save" value="<?php _e('Save Changes','inove'); ?>" />
+			<input class="button-primary" type="submit" name="ikyrin_save" value="<?php _e('Save Changes','ikyrin'); ?>" />
 		</p>
 	</div>
 </form>
@@ -513,9 +513,9 @@
 <?php 
 		}
 	}
-	add_action('admin_menu',array('iNoveOptions','add'));
+	add_action('admin_menu',array('iKyrinOptions','add'));
 	function theme_init(){
-		load_theme_textdomain('inove',get_template_directory() .'/languages');
+		load_theme_textdomain('ikyrin',get_template_directory() .'/languages');
 	}
 	add_action ('init','theme_init');
 	if( function_exists('register_sidebar') ) {
@@ -644,11 +644,11 @@
 				</span>
 			<?php endif; ?>
 				 | <a class="anchor" rel="nofollow" href="#comment-<?php comment_ID() ?>"><?php printf('#%1$s',++$commentcount); ?></a>
-			<div class="dtreviewed"><?php printf( __('%1$s at %2$s','inove'),get_comment_time(__('F jS, Y','inove')),get_comment_time(__('H:i','inove')) ); ?><?php if (function_exists('useragent_output_custom')) {printf(' | ');echo useragent_output_custom();} ?></div>
+			<div class="dtreviewed"><?php printf( __('%1$s at %2$s','ikyrin'),get_comment_time(__('F jS, Y','ikyrin')),get_comment_time(__('H:i','ikyrin')) ); ?><?php if (function_exists('useragent_output_custom')) {printf(' | ');echo useragent_output_custom();} ?></div>
 		</div>
 
 		<?php if ($comment->comment_approved == '0') : ?>
-			<p><small><?php _e('Your comment is awaiting moderation.','inove'); ?></small></p>
+			<p><small><?php _e('Your comment is awaiting moderation.','ikyrin'); ?></small></p>
 		<?php endif; ?>		
 		<div class="description" id="commentbody-<?php comment_ID() ?>">
 			<?php comment_text(); ?>
@@ -658,7 +658,7 @@
 	}
 	function wumii_get_related_items() {
 		require_once(ABSPATH .'wp-admin/includes/plugin.php');
-		$themeOptions = get_option('inove_options');
+		$themeOptions = get_option('ikyrin_options');
 		$is_enabled = $themeOptions['wumii_is_enabled'];
 		global $post,$wumii_should_display;
 		$wumii_should_display = $is_enabled &&!is_plugin_active('wumii-related-posts/wumii-related-posts.php') &&

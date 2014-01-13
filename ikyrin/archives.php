@@ -9,7 +9,7 @@
 			<?php if( method_exists( $GoogleTranslation,'google_ajax_translate_button') ) : ?>
 				<span id="translate_button_post-<?php the_ID(); ?>" class="translate"><a href="javascript:void(0);" onclick="show_translate_popup(\'en\', \'post\', <?php the_ID(); ?>);" rel="nofollow">Translate</a></span>
 			<?php endif; ?>
-			<?php edit_post_link(__('Edit','inove'),'<span class="editpost">','</span>'); ?>
+			<?php edit_post_link(__('Edit','ikyrin'),'<span class="editpost">','</span>'); ?>
 		</div>
 		<div class="content clearfix">
 			<?php if (function_exists('wp_easyarchives')) {
@@ -19,14 +19,14 @@
 				wp_get_archives('type=monthly&show_post_count=1');
 				echo '</ul>';
 			} ?>
-			<!-- ?php the_content(__('Read more...','inove')); ? -->
+			<!-- ?php the_content(__('Read more...','ikyrin')); ? -->
 		</div>
 	</div>
 
 <?php else : ?>
 <!-- ?php endwhile;else : ? -->
 	<div class="errorbox">
-		<?php _e('Sorry, no posts matched your criteria.','inove'); ?>
+		<?php _e('Sorry, no posts matched your criteria.','ikyrin'); ?>
 	</div>
 <?php endif; ?>
 <?php get_footer(); ?>

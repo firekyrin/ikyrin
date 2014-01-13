@@ -116,11 +116,11 @@
 	<?php endif; ?>
 		 | <a class="anchor" rel="nofollow" href="#comment-<?php comment_ID() ?>"><?php printf('#%1$s',$commentcount +1); ?></a>
 		<div class="dtreviewed">
-			<?php printf( __('%1$s at %2$s','inove'),get_comment_time(__('F jS, Y','inove')),get_comment_time(__('H:i','inove')) ); ?></div>
+			<?php printf( __('%1$s at %2$s','ikyrin'),get_comment_time(__('F jS, Y','ikyrin')),get_comment_time(__('H:i','ikyrin')) ); ?></div>
 		</div>
 
 <?php if ($comment->comment_approved == '0') : ?>
-	<p><small><?php _e('Your comment is awaiting moderation.','inove'); ?></small></p>
+	<p><small><?php _e('Your comment is awaiting moderation.','ikyrin'); ?></small></p>
 <?php endif; ?>
 <div class="description" id="commentbody-<?php comment_ID() ?>">
 	<?php comment_text(); ?>

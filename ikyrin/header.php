@@ -1,7 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <?php 
-	global $inove_nosidebar;
-	$options = get_option('inove_options');
+	global $ikyrin_nosidebar;
+	$options = get_option('ikyrin_options');
 	if (is_home()) {
 		$home_menu = 'current_page_item';
 	}else {
@@ -22,10 +22,10 @@
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<meta http-equiv="Content-Language" content="zh-CN" />
 	<meta name="keywords" content="<?php if (is_home()) {echo($options['keywords']);}elseif (is_single()) {$tags = wp_get_post_tags($post->ID);foreach ($tags as $tag ) {$keywords = $keywords .$tag->name .", ";}echo $keywords;}else {echo '';} ?>" />
-	<meta name="description" content="<?php if ( is_home() ) {echo($options['description']);}elseif (is_single()) {if (has_excerpt()) {the_excerpt();}else {echo mb_strimwidth(strip_tags(apply_filters('the_content',$post->post_content)),0,160,"...");}}elseif (is_category()) {printf(single_cat_title('',false));}elseif (is_tag()) {printf(single_tag_title('',false));}elseif (is_day()) {printf(get_the_time(__('F jS, Y','inove')));}elseif (is_month()) {printf(get_the_time(__('F, Y','inove')));}elseif (is_year()) {printf(get_the_time(__('Y','inove')));}else {the_title('');} ?>" />
+	<meta name="description" content="<?php if ( is_home() ) {echo($options['description']);}elseif (is_single()) {if (has_excerpt()) {the_excerpt();}else {echo mb_strimwidth(strip_tags(apply_filters('the_content',$post->post_content)),0,160,"...");}}elseif (is_category()) {printf(single_cat_title('',false));}elseif (is_tag()) {printf(single_tag_title('',false));}elseif (is_day()) {printf(get_the_time(__('F jS, Y','ikyrin')));}elseif (is_month()) {printf(get_the_time(__('F, Y','ikyrin')));}elseif (is_year()) {printf(get_the_time(__('Y','ikyrin')));}else {the_title('');} ?>" />
 	<title><?php if ( is_single() ||is_page() ||is_category() ||is_tag() ) {wp_title('');}else {bloginfo('name');} ?></title>
-	<link rel="alternate" type="application/rss+xml" title="<?php _e('RSS 2.0 - all posts','inove'); ?>" href="<?php echo $feed; ?>" />
-	<link rel="alternate" type="application/rss+xml" title="<?php _e('RSS 2.0 - all comments','inove'); ?>" href="<?php bloginfo('comments_rss2_url'); ?>" />
+	<link rel="alternate" type="application/rss+xml" title="<?php _e('RSS 2.0 - all posts','ikyrin'); ?>" href="<?php echo $feed; ?>" />
+	<link rel="alternate" type="application/rss+xml" title="<?php _e('RSS 2.0 - all comments','ikyrin'); ?>" href="<?php bloginfo('comments_rss2_url'); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/style.css?v=121120" type="text/css" media="screen" />
 	<?php if (strtoupper(get_locale()) == 'ZH_CN'||strtoupper(get_locale()) == 'ZH_TW') : ?>		<link rel="stylesheet" href="<?php bloginfo('stylesheet_directory'); ?>/chinese.css" type="text/css" media="screen" />
@@ -40,7 +40,7 @@
 <?php flush(); ?>
 <body>
 <!-- container START -->
-<div id="container" <?php if($options['nosidebar'] ||$inove_nosidebar){echo 'class="one-column"';} ?> >
+<div id="container" <?php if($options['nosidebar'] ||$ikyrin_nosidebar){echo 'class="one-column"';} ?> >
 
 <?php include('templates/header.php'); ?>
 <!-- content START -->

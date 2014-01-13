@@ -1,6 +1,6 @@
 
 <?php 
-	global $inove_nosidebar;
-	$inove_nosidebar = true;
+	global $ikyrin_nosidebar;
+	$ikyrin_nosidebar = true;
 	include('page.php');
 ?>

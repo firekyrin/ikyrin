@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: iNove 1.4\n"
+"Project-Id-Version: iKyrin 1.4\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2009-08-07 14:15+0900\n"
 "PO-Revision-Date: \n"
-"Last-Translator: mg12 <wuzhao.mail@gmail.com>\n"
-"Language-Team: NeoEase <http://www.neoease.com/themes/>\n"
+"Last-Translator: FireKyrin <819277740@qq.com>\n"
+"Language-Team: FireKyrin <http://www.firekyrin.com/ikyrin-theme>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -308,7 +308,7 @@ msgstr "主題由 <a href=\"%1$s\">NeoEase</a> 提供，通過 <a href=\"%2$s\">
 #: functions.php:180
 #: functions.php:189
 msgid "Current Theme Options"
-msgstr "iNove主題設定"
+msgstr "iKyrin主題設定"
 
 #: functions.php:194
 msgid "Search"
