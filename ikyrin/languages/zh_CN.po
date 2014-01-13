@@ -596,6 +596,14 @@ msgstr "文章存档"
 msgid "Meta"
 msgstr "功能"
 
+#: sidebar.php
+msgid "Hot Posts"
+msgstr "热门文章"
+
+#: sidebar.php
+msgid "Recent Comments"
+msgstr "最新评论"
+
 #: single.php:7
 msgid "Go to homepage"
 msgstr "转到首页"

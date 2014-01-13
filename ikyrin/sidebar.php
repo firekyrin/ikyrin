@@ -83,7 +83,7 @@
 	<!-- Posts View  -->
 	<?php if (is_home() &&function_exists('get_most_viewed')): ?>
 		<div class="widget">
-			<div class="title">Hot Posts</div>
+			<div class="title"><?php _e('Hot Posts', 'inove'); ?></div>
 		   <ul>
 			  <?php get_most_viewed('post',5); ?>
 		   </ul>
@@ -91,7 +91,7 @@
 
 	<?php elseif (is_tag() &&function_exists('get_most_viewed_tag') &&!empty($tag_id)): ?>
 		<div class="widget">
-			<div class="title">Hot Posts</div>
+			<div class="title"><?php _e('Hot Posts', 'inove'); ?></div>
 			<ul>
 			  <?php get_most_viewed_tag($tag_id,'post',5); ?>
 			</ul>
@@ -99,7 +99,7 @@
 
 	<?php elseif (is_category() &&function_exists('get_most_viewed_category') &&!empty($cat)): ?>
 		<div class="widget">
-			<div class="title">Hot Posts</div>
+			<div class="title"><?php _e('Hot Posts', 'inove'); ?></div>
 			<ul>
 			<?php get_most_viewed_category($cat,'post',5); ?>
 			</ul>
@@ -107,7 +107,7 @@
 
 	<?php elseif (function_exists('get_most_viewed')) : ?>
 		<div class="widget">
-			<div class="title">Hot Posts</div>
+			<div class="title"><?php _e('Hot Posts', 'inove'); ?></div>
 		   <ul>
 			  <?php get_most_viewed('post',5); ?>
 		   </ul>
@@ -117,7 +117,7 @@
 	<!-- recent comments -->
 	<?php if( function_exists('wp_recentcomments') ) : ?>
 		<div class="widget">
-			<div class="title">Recent Comments</div>
+			<div class="title"><?php _e('Recent Comments', 'inove'); ?></div>
 			<ul>
 				<?php wp_recentcomments('limit=5&length=16&post=false&smilies=true'); ?>
 			</ul>

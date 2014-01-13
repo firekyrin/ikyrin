@@ -42,7 +42,7 @@
 			}
 		 ?><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a>. All rights reserved.
 		<div class="theme">
-			<?php printf(__('Powered by <a href="%1$s">WordPress</a>. Theme by <a href="%2$s">FireKyrin</a>, designed by <a href="%3$s">FireKyrin</a>. Valid <a rel="external nofollow" href="%4$s">XHTML 1.1</a> and <a rel="external nofollow" href="%5$s">CSS 3</a>.','inove'),'http://wordpress.org/','http://www.firekyrin.com/','http://www.firekyrin.com/','http://validator.w3.org/check?uri=referer','http://jigsaw.w3.org/css-validator/check/referer?profile=css3'); ?> | 沪ICP备xxxxxxx号 | 网站统计
+			<?php printf(__('Powered by <a href="%1$s">WordPress</a>. Theme by <a href="%2$s">FireKyrin</a>, designed by <a href="%3$s">FireKyrin</a>. Valid <a rel="external nofollow" href="%4$s">XHTML 1.1</a> and <a rel="external nofollow" href="%5$s">CSS 3</a>.','inove'),'http://wordpress.org/','http://www.firekyrin.com/','http://www.firekyrin.com/','http://validator.w3.org/check?uri=referer','http://jigsaw.w3.org/css-validator/check/referer?profile=css3'); ?> | 沪ICP备xxxxxxxx号 | 网站统计
 			<span style="vertical-align:middle">
 			<?php 
 				$options = get_option('inove_options');
