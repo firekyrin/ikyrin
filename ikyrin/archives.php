@@ -2,6 +2,7 @@
  ?>
 <?php get_header(); ?>
 <?php if (have_posts()) : the_post();update_post_caches($posts); ?>
+<!-- ?php if (have_posts()) : $i=0;while (have_posts()) : $i++;the_post();update_post_caches($posts); ? -->
 	<div class="post post_without_border" id="post-<?php the_ID(); ?>">
 		<h2><?php the_title(); ?></h2>
 		<div class="info clearfix">
@@ -18,10 +19,12 @@
 				wp_get_archives('type=monthly&show_post_count=1');
 				echo '</ul>';
 			} ?>
+			<!-- ?php the_content(__('Read more...','inove')); ? -->
 		</div>
 	</div>
 
 <?php else : ?>
+<!-- ?php endwhile;else : ? -->
 	<div class="errorbox">
 		<?php _e('Sorry, no posts matched your criteria.','inove'); ?>
 	</div>

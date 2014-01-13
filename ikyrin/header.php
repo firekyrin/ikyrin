@@ -21,10 +21,8 @@
 <head profile="http://gmpg.org/xfn/11">
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<meta http-equiv="Content-Language" content="zh-CN" />
-	<!-- meta name="keywords" content=" --><!-- ?php if (is_home()) {echo($options['keywords']);}elseif (is_single()) {$tags = wp_get_post_tags($post->ID);foreach ($tags as $tag ) {$keywords = $keywords .$tag->name .", ";}echo $keywords;}else {echo '';} ?>" / -->
-	<meta name="keywords" content="Linux,Fedora,Ubuntu,操作系统,开源社区,开源软件,开源项目,移动互联网,火麒麟,Android应用,Wordpress,博客,内核,驱动,Shell脚本" />
-	<meta name="description" content="FireKyrin是一个关于Linux技术与移动互联网发展的IT技术与产品博客。" />
-	<!-- meta name="description" content=" --><!-- ?php if ( is_home() ) {echo($options['description']);}elseif (is_single()) {if (has_excerpt()) {the_excerpt();}else {echo mb_strimwidth(strip_tags(apply_filters('the_content',$post->post_content)),0,160,"...");}}elseif (is_category()) {printf(single_cat_title('',false));}elseif (is_tag()) {printf(single_tag_title('',false));}elseif (is_day()) {printf(get_the_time(__('F jS, Y','inove')));}elseif (is_month()) {printf(get_the_time(__('F, Y','inove')));}elseif (is_year()) {printf(get_the_time(__('Y','inove')));}else {the_title('');} ?>" / -->
+	<meta name="keywords" content="<?php if (is_home()) {echo($options['keywords']);}elseif (is_single()) {$tags = wp_get_post_tags($post->ID);foreach ($tags as $tag ) {$keywords = $keywords .$tag->name .", ";}echo $keywords;}else {echo '';} ?>" />
+	<meta name="description" content="<?php if ( is_home() ) {echo($options['description']);}elseif (is_single()) {if (has_excerpt()) {the_excerpt();}else {echo mb_strimwidth(strip_tags(apply_filters('the_content',$post->post_content)),0,160,"...");}}elseif (is_category()) {printf(single_cat_title('',false));}elseif (is_tag()) {printf(single_tag_title('',false));}elseif (is_day()) {printf(get_the_time(__('F jS, Y','inove')));}elseif (is_month()) {printf(get_the_time(__('F, Y','inove')));}elseif (is_year()) {printf(get_the_time(__('Y','inove')));}else {the_title('');} ?>" />
 	<title><?php if ( is_single() ||is_page() ||is_category() ||is_tag() ) {wp_title('');}else {bloginfo('name');} ?></title>
 	<link rel="alternate" type="application/rss+xml" title="<?php _e('RSS 2.0 - all posts','inove'); ?>" href="<?php echo $feed; ?>" />
 	<link rel="alternate" type="application/rss+xml" title="<?php _e('RSS 2.0 - all comments','inove'); ?>" href="<?php bloginfo('comments_rss2_url'); ?>" />

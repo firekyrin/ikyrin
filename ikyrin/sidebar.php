@@ -19,9 +19,11 @@
 	<!-- posts -->
 	<?php 
 		if (is_single()) {
-			$posts_widget_title = 'Recent Posts';
+			//$posts_widget_title = 'Recent Posts';
+			$posts_widget_title = '最新文章';
 		}else {
-			$posts_widget_title = 'Random Posts';
+			//$posts_widget_title = 'Random Posts';
+			$posts_widget_title = '随机文章';
 		}
 	?>
 
@@ -123,8 +125,8 @@
 	<?php endif; ?>
 
 	<!-- tag cloud -->
-	<div id="tag_cloud" class="widget">
-		<div class="title">Tag Cloud</div>
+	<div id="tag-cloud" class="widget">
+		<div class="title"><?php _e('Tag Cloud', 'inove'); ?></div>
 		<?php wp_tag_cloud('smallest=8&largest=16'); ?>
 	</div>
 
@@ -140,7 +142,8 @@
 				$tmp = "<li><a rel='external nofollow' href='".$url."' title='".$comment->comment_author." (".$comment->cnt.")'>".get_avatar($comment->comment_author_email,32)."</a></li>";
 				$output .= $tmp;
 			}
-			$output = "<div class='widget commentators clearfix'><div class='title'>Top Commentators</div><ul>".$output."</ul></div>";
+			//$output = "<div class='widget commentators clearfix'><div class='title'>Top Commentators</div><ul>".$output."</ul></div>";
+			$output = "<div class='widget commentators clearfix'><div class='title'>活跃读者</div><ul>".$output."</ul></div>";
 			echo $output ;
 		}
 ?>
@@ -156,7 +159,7 @@
 
 		<!-- categories -->
 		<div class="widget_categories">
-			<div class="title">Categories</div>
+			<div class="title"><?php _e('Categories', 'inove'); ?></div>
 			<ul>
 				<?php wp_list_cats('sort_column=name&optioncount=0&depth=1'); ?>
 			</ul>
@@ -171,7 +174,7 @@
 	<?php if ( !function_exists('dynamic_sidebar') ||!dynamic_sidebar('west_sidebar') ) : ?>
 
 		<!-- archives -->
-		<div class="title">Archives</div>
+		<div class="title"><?php _e('Archives', 'inove'); ?></div>
 		<?php if(function_exists('wp_easyarchives_widget')) : ?>
 			<?php wp_easyarchives_widget("mode=none&limit=6"); ?>
 		<?php else : ?>
@@ -190,7 +193,7 @@
 
 	<!-- meta -->
 	<div class="widget">
-		<div class="title">Meta</div>
+		<div class="title"><?php _e('Meta', 'inove'); ?></div>
 		<ul>
 			<?php wp_register(); ?>
 			<li><?php wp_loginout(); ?></li>

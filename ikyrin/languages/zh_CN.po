@@ -347,6 +347,26 @@ msgstr "侧边栏"
 msgid "Hide sidebar from all pages."
 msgstr "在所有页面都不显示侧边栏."
 
+#: functions.php:235
+msgid "Theme style"
+msgstr "主题风格"
+
+#: functions.php:235
+msgid "Switch theme to collapse style."
+msgstr "切换主题到collapse风格."
+
+#: functions.php:235
+msgid "Related Posts"
+msgstr "相关文章"
+
+#: functions.php:235
+msgid "Related Posts Plugin enabled in Wumii"
+msgstr "启用无觅相关文章插件"
+
+#: functions.php:235
+msgid "Set in hunting related articles Style Sign:<a href=\"http://www.wumii.com/site/index.htm\">Wumii site management center</a>"
+msgstr "设置无觅相关文章展示样式请登陆：<a href=\"http://www.wumii.com/site/index.htm\">无觅网站管理中心</a>"
+
 #: functions.php:246
 msgid "Notice"
 msgstr "公告栏"
@@ -555,6 +575,26 @@ msgstr "邮件订阅"
 #: sidebar.php:42
 msgid "Follow me!"
 msgstr ""
+
+#: sidebar.php
+msgid "Tag Cloud"
+msgstr "热门标签"
+
+#: sidebar.php
+msgid "Top Commentators"
+msgstr "活跃读者"
+
+#: sidebar.php
+msgid "Categories"
+msgstr "文章类目"
+
+#: sidebar.php
+msgid "Archives"
+msgstr "文章存档"
+
+#: sidebar.php
+msgid "Meta"
+msgstr "功能"
 
 #: single.php:7
 msgid "Go to homepage"

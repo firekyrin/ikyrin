@@ -29,7 +29,8 @@
 	</div>
 
 	<!-- comments START -->
-	<ol id="thecomments" class="commentlist">
+	<!-- ol id="thecomments" class="commentlist" -->
+	<ol id="comments" class="commentlist">
 	<?php 
 		if ($comments &&count($comments) -count($trackbacks) >0) {
 			if (function_exists('wp_list_comments')) {

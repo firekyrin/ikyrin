@@ -53,13 +53,13 @@
 			</span>
 		</div>
 		<?php if ($i>0){ ?>
-			<div class="content blank_content clearfix"></div>
-		<?php }else { ?>
 			<div class="content clearfix"><?php the_content(__('Read more...','inove')); ?></div>
+		<?php }else { ?>
+			<div class="content blank_content clearfix"></div>
 		<?php }; ?>
-		<?php if ($options['tags']) : ?>
-			<div class="under"><span class="tag"><?php the_tags('',', ',''); ?></span></div>
-		<?php endif; ?>
+		<!-- ?php if ($options['tags']) : ? -->
+			<!-- div class="under"><span class="tag" --><!--?php the_tags('',', ',''); ?--><!--/span></div-->
+		<!--?php endif; ? -->
 	</div>
 <?php endwhile;else : ?>
 	<div class="errorbox">

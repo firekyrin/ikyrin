@@ -5,9 +5,9 @@
 			if (!is_array($options)) {
 			$options['keywords'] = '';
 			$options['description'] = '';
-			$options['google_cse'] = false;
+			$options['google_cse'] = true;
 			$options['google_cse_cx'] = '';
-			$options['menu_type'] = 'pages';
+			$options['menu_type'] = 'custom';
 			$options['nosidebar'] = false;
 			$options['collapse'] = false;
 			$options['notice'] = false;
@@ -181,7 +181,7 @@
 			}else {
 				iNoveOptions::getOptions();
 		}
-	add_theme_page(__('Current Theme Options','inove'),__('Current Theme Options','inove'),'edit_themes',basename(__FILE__),array('iNoveOptions','display'));
+		add_theme_page(__('Current Theme Options','inove'),__('Current Theme Options','inove'),'edit_themes',basename(__FILE__),array('iNoveOptions','display'));
 	}
 	function display() {
 		$options = iNoveOptions::getOptions();
@@ -231,11 +231,14 @@
 					<th scope="row"><?php _e('Menubar','inove'); ?></th>
 					<td>
 						<label style="margin-right:20px;">
-							<input name="menu_type" type="radio" value="pages" <?php if($options['menu_type'] != 'categories') echo "checked='checked'"; ?> />
-							 <?php _e('Show pages as menu.','inove'); ?>						</label>
-						<label>
 							<input name="menu_type" type="radio" value="categories" <?php if($options['menu_type'] == 'categories') echo "checked='checked'"; ?> />
 							 <?php _e('Show categories as menu.','inove'); ?>						</label>
+						<label style="margin-right:20px;">
+							<input name="menu_type" type="radio" value="pages" <?php if($options['menu_type'] == 'pages') echo "checked='checked'"; ?> />
+							 <?php _e('Show pages as menu.','inove'); ?>						</label>
+						<label>
+							<input name="menu_type" type="radio" value="custom" <?php if($options['menu_type'] != 'pages' && $options['menu_type'] != 'categories') echo "checked='checked'"; ?> />
+							 <?php _e('Show ikyrin theme custom as menu.','inove'); ?>						</label>
 					</td>
 				</tr>
 			</tbody>
@@ -270,12 +273,12 @@
 		<table class="form-table">
 			<tbody>
 				<tr valign="top">
-					<th scope="row"><?php _e('相关文章','inove'); ?></th>
+					<th scope="row"><?php _e('Related Posts','inove'); ?></th>
 					<td>
 						<label>
 							<input name="wumii_is_enabled" type="checkbox" value="checkbox" <?php if($options['wumii_is_enabled']) echo "checked='checked'"; ?> />
-							 <?php _e('启用无觅相关文章插件','inove'); ?>						</label><br/>
-						<?php _e('设置无觅相关文章展示样式请登录：<a href=\"http://www.wumii.com/site/index.htm\">无觅网站管理中心</a>','inove'); ?>					</td>
+							 <?php _e('Related Posts Plugin enabled in Wumii','inove'); ?>						</label><br/>
+						<?php _e('Set in hunting related articles Style Sign:<a href=\"http://www.wumii.com/site/index.htm\">Wumii site management center</a>','inove'); ?>					</td>
 				</tr>
 			</tbody>
 		</table>
@@ -688,7 +691,7 @@
 	    //--></script>
 	    <script type=\"text/javascript\" src=\"http://widget.wumii.com/ext/relatedItemsWidget.htm?type=1&amp;num=$num&amp;mode=$mode&amp;pf=WordPress&amp;theme=$themeName\"></script>
 	    <a href=\"http://www.wumii.com/widget/relatedItems.htm\" style=\"border:0;\">
-        	<img src=\"http://static.wumii.com/images/pixel.png\" alt=\"无觅相关文章插件\" style=\"border:0;padding:0;margin:0;\" />
+        	<img src=\"http://static.wumii.com/images/pixel.png\" alt=\"鏃犺鍏宠仈鎺ㄨ崘\" style=\"border:0;padding:0;margin:0;\" />
 	    </a>
 		</p>";
 	}

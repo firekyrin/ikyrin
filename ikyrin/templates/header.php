@@ -1,4 +1,5 @@
 <!-- header START -->
+<?php $options = get_option('inove_options'); ?>
 <div id="header">
 	<div class="inner clearfix">
 	<div id="caption">
@@ -23,20 +24,29 @@
 
 <!-- navigation START -->
 <div id="navi">
-	<?php wp_nav_menu(array('depth' => 3, 'container_class' => 'inner clearfix', 'menu_id' => 'menus', 'theme_location'=>'menu-header')); ?>
-	<!-- div class="inner clearfix" -->
+	<?php //wp_nav_menu(array('depth' => 3, 'container_class' => 'inner clearfix', 'menu_id' => 'menus', 'theme_location'=>'menu-header')); ?>
+	<!-- fix start -->
+	<div class="inner clearfix">
 	<!-- menus START -->
-	<!-- ul id="menus">
-		<li class="--><!-- ?php echo($home_menu); ?>"><a class="home" href=" --><!-- ?php echo get_settings('home'); ?>/" --><!-- ?php _e('Home','inove'); ?></a></li -->
-		<!-- ?php 
+	<ul id="menus">
+		<li class="<?php echo($home_menu); ?>"><a class="home" href="<?php echo get_settings('home'); ?>/"><?php _e('Home','inove'); ?></a></li>
+		<?php 
 			if($options['menu_type'] == 'categories') {
 				wp_list_categories('title_li=0&orderby=name&show_count=0');
-			}else {
+			}
+			elseif($options['menu_type'] == 'pages') {
 				$pages = wp_list_pages('echo=0&exclude=247&title_li=0&sort_column=menu_order');
-echo preg_replace('/title=\"(.*?)\"/','',$pages);
-		} ? -->
-	<!-- /ul -->
+				echo preg_replace('/title=\"(.*?)\"/','',$pages);
+			}
+			else {
+				//wp_nav_menu(array('depth' => 3, 'container_class' => 'inner clearfix', 'menu_id' => 'menus', 'theme_location'=>'menu-header'));
+				wp_list_categories('title_li=0&orderby=name&include=4,5&show_count=0');
+				$pages = wp_list_pages('echo=0&exclude=2&title_li=0&sort_column=menu_order');
+				echo preg_replace('/title=\"(.*?)\"/','',$pages);
+		} ?>
+	</ul>
 	<!-- menus END -->
-	<!-- /div -->
+	</div>
+	<!-- fix end -->
 </div>
 <!-- navigation END -->

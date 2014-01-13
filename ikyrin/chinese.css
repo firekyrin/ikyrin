@@ -1,45 +1,49 @@
 #easy-archives .ea-filter select, #easy-archives .ea-filter input,
 #easy-archives em,
-#tagline, 
+#tagline, 
 #cmtswitcher, 
 #follow a,
 #subscribe a,
 .copyright,
 .rc-navi,
-.boxcaption h3,
-.comment .date, 
+.boxcaption h3,
+.comment .date, 
 .trackback .date, 
 .translate a,
-.comment-act a,
-.comment .act, 
-.trackback .act, 
-#submit, 
+.comment-act a,
+.comment .act, 
+.trackback .act, 
+#submit, 
 .more-link, 
 #submitbox .button,
-.messagebox, 
-.errorbox, 
-#menus li a, 
-.post .date, 
-.post .under, 
-.post .author, 
-.post .editpost, 
-.post .readingblinds, 
-.post .comments, 
-.post .addcomment, 
-.post .editlinks, 
-.post .addlink, 
-#pagenavi, 
-#footer, 
+.messagebox, 
+.errorbox, 
+#menus li a, 
+.post .date, 
+.post .under, 
+.post .author, 
+.post .editpost, 
+.post .readingblinds, 
+.post .comments, 
+.post .addcomment, 
+.post .editlinks, 
+.post .addlink, 
+#pagenavi, 
+#qr-code a,
+#footer, 
 #crumb,
-#cmtswitcher .addcomment, 
-#cmtswitcher .addtrackback, 
-#respond, 
-#commentnavi, 
-#submitbox #submit,
-#sidebar #feedrss, 
-#sidebar #feedemail, 
-#sidebar #followme {
-	font-size:12px;
+#cmtswitcher .addcomment, 
+#cmtswitcher .addtrackback, 
+#respond, 
+#commentnavi, 
+#submitbox #submit,
+#sidebar #feedrss, 
+#sidebar #feedemail, 
+#sidebar #followme {
+	font-size:12px;
+}
+#menus li a {
+	font-size:14px;
 }
 #submitbox .button,
 .content input {
@@ -49,13 +53,13 @@ small,
 .dtreviewed,
 .rc-item .rc-label {
 	font-size:11px;
-}
-#cmtswitcher #trackbacktab {
-	padding:6px 10px !important;
-	padding:6px 10px;
-}
-*+html #cmtswitcher #trackbacktab {
-	padding:6px 10px !important;
+}
+#cmtswitcher #trackbacktab {
+	padding:6px 10px !important;
+	padding:6px 10px;
+}
+*+html #cmtswitcher #trackbacktab {
+	padding:6px 10px !important;
 }
 .combobox ul{width:189px}
 .combobox li a{width:62px}
