@@ -80,6 +80,7 @@
 		</div>
 	<?php endif; ?>
 
+	<div id="sidebar-follow"><!-- sidebar-follow START  -->
 	<!-- Posts View  -->
 	<?php if (is_home() &&function_exists('get_most_viewed')): ?>
 		<div class="widget">
@@ -206,6 +207,7 @@
 <?php endif; ?>
 <?php endif; ?>
 <!-- sidebar south END -->
+	</div><!-- sidebar-follow END  -->
 
 </div>
 

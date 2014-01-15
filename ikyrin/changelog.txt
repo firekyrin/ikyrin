@@ -1,3 +1,11 @@
+ikyrin (0.7.0) unstable; urgency=low
+
+  * Add SidebarFollow function
+  * Update Post Views Count
+  * update version to 0.7.0
+
+ -- FireKyrin <819277740@qq.com> Wed, 15 Jan 2014 10:01:11 +0800
+
 ikyrin (0.6.0) unstable; urgency=low
 
   * Fix qr-code, feedlist cumulativeoffset 30

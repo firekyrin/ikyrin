@@ -9,7 +9,10 @@
 			<?php edit_post_link(__('Edit','ikyrin'),'<span class="editpost">','</span>'); ?>
 			<?php if ($comments ||comments_open()) : ?>
 				<span class="addcomment"><a href="#respond"><?php _e('Leave a comment','ikyrin'); ?></a></span>
-				<span class="comments"><a href="#comments"><?php _e('Go to comments','ikyrin'); ?></a></span>
+				<span class="comments">
+					<a href="#comments"><?php _e('Go to comments','ikyrin'); ?></a>
+					<span class="views"><?php if (function_exists('the_views')) the_views(true,' | ',''); ?></span>
+				</span>
 			<?php endif; ?>
 		</div>
 		<div class="content clearfix">
