@@ -42,10 +42,7 @@
 			}
 		 ?><a href="<?php bloginfo('url'); ?>/"><?php bloginfo('name'); ?></a>. All rights reserved.
 		<div class="theme">
-			<?php printf(__('Powered by <a href="%1$s">WordPress</a>. Theme by <a href="%2$s">FireKyrin</a>, designed by <a href="%3$s">FireKyrin</a>. Valid <a rel="external nofollow" href="%4$s">XHTML 1.1</a> and <a rel="external nofollow" href="%5$s">CSS 3</a>.','ikyrin'),'http://wordpress.org/','http://www.firekyrin.com/','http://www.firekyrin.com/','http://validator.w3.org/check?uri=referer','http://jigsaw.w3.org/css-validator/check/referer?profile=css3'); ?> | 沪ICP备12019676号-1 | <script type="text/javascript">
-var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
-document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F648d7ddde548614a1698325ab1ddb1a1' type='text/javascript'%3E%3C/script%3E"));
-</script>
+			<?php printf(__('Powered by <a href="%1$s">WordPress</a>. Theme by <a href="%2$s">FireKyrin</a>, designed by <a href="%3$s">FireKyrin</a>. Valid <a rel="external nofollow" href="%4$s">XHTML 1.1</a> and <a rel="external nofollow" href="%5$s">CSS 3</a>.','ikyrin'),'http://wordpress.org/','http://www.firekyrin.com/','http://www.firekyrin.com/','http://validator.w3.org/check?uri=referer','http://jigsaw.w3.org/css-validator/check/referer?profile=css3'); ?> | 沪ICP备xxxxxxxx号 | 网站统计
 			<span style="vertical-align:middle">
 			<?php 
 				$options = get_option('ikyrin_options');
